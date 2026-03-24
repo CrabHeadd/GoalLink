@@ -7,26 +7,34 @@
                     "entries": [
                         {
                             "codegenResult": 0,
-                            "column": 31,
+                            "column": 24,
                             "durationMicroseconds": 2000,
-                            "functionName": "fill",
-                            "line": 10,
+                            "functionName": "right",
+                            "line": 19,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 31,
+                            "column": 27,
                             "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 17,
+                            "functionName": "centerIn",
+                            "line": 31,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 31,
+                            "column": 39,
                             "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 26,
+                            "functionName": "horizontalCenter",
+                            "line": 36,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 46,
                             "message": ""
                         }
                     ],
