@@ -2,5 +2,6 @@ module Button
 typeinfo appButton.qmltypes
 prefer :/qt/qml/Button/
 Main 254.0 Main.qml
+Home 254.0 Home.qml
 depends QtQuick
 

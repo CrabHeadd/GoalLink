@@ -125,7 +125,9 @@ Window {
                     }
                     MouseArea{
                         anchors.fill: parent
-
+                        onClicked:{
+                            change.push("Home.qml")
+                        }
                     }
                 }
                 Rectangle{
@@ -148,7 +150,9 @@ Window {
                     }
                     MouseArea{
                         anchors.fill: parent
-
+                        onClicked:{
+                            change.push("Home.qml")
+                        }
                     }
                 }
 
@@ -157,6 +161,11 @@ Window {
         }
 
     }
+    StackView{
+        id:change
+        anchors.fill: parent
+    }
+
     /*
         Image {
             id: post1

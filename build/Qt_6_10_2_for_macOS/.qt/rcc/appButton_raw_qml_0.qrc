@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/qt/qml/Button/">
     <file alias="Main.qml">/Users/giovannigil/Button/Main.qml</file>
+    <file alias="Home.qml">/Users/giovannigil/Button/Home.qml</file>
   </qresource>
 </RCC>
 

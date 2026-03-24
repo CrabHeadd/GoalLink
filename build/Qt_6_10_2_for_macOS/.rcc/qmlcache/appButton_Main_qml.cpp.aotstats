@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 2000,
+                            "durationMicroseconds": 1000,
                             "functionName": "centerIn",
                             "line": 13,
                             "message": ""
@@ -166,6 +166,14 @@
                             "message": ""
                         },
                         {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 128,
+                            "message": "Cannot retrieve a non-object type by ID: change"
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 39,
                             "durationMicroseconds": 0,
@@ -178,7 +186,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 132,
+                            "line": 134,
                             "message": "Cannot load property color from (component in /Users/giovannigil/Button/Main.qml)::parent with type QQuickItem."
                         },
                         {
@@ -186,7 +194,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 136,
+                            "line": 138,
                             "message": ""
                         },
                         {
@@ -194,7 +202,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 137,
+                            "line": 139,
                             "message": ""
                         },
                         {
@@ -202,7 +210,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 145,
+                            "line": 147,
                             "message": ""
                         },
                         {
@@ -210,16 +218,32 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 147,
+                            "line": 149,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 153,
+                            "message": "Cannot retrieve a non-object type by ID: change"
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 150,
+                            "line": 152,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 166,
+                            "message": "Could not find property \"fill\"."
                         }
                     ],
                     "filePath": "/Users/giovannigil/Button/Main.qml"
