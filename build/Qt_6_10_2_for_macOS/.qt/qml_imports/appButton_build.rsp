@@ -1,0 +1,15 @@
+-rootPath
+/Users/giovannigil/Button
+-cmake-output
+-output-file
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/qml_imports/appButton_build.cmake
+-importPath
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS
+-importPath
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button
+-importPath
+/Users/giovannigil/Qt/6.10.2/macos/qml
+-qrcFiles
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/qmake_Button.qrc
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_qml_0.qrc
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_res_0.qrc

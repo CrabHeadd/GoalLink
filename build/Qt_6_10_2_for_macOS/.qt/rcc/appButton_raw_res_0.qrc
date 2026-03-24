@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/Button/">
+    <file alias="socc1.jpg">/Users/giovannigil/Button/socc1.jpg</file>
+    <file alias="logo.png">/Users/giovannigil/Button/logo.png</file>
+  </qresource>
+</RCC>
+

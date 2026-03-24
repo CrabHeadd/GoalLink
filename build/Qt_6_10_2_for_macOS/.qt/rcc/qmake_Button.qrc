@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Button">
+    <file alias="qmldir">/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/qmldir</file>
+  </qresource>
+</RCC>
+

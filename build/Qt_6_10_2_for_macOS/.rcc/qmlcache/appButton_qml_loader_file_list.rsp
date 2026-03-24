@@ -1,0 +1,7 @@
+--resource
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/qmake_Button.qrc
+--resource
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_qml_0.qrc
+--resource
+/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_res_0.qrc
+/qt/qml/Button/Main.qml

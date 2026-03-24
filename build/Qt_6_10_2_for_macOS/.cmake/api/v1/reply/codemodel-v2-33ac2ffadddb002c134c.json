@@ -1,0 +1,844 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-fe54a63e094c6b57d7d9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Button",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-47be9ab10deed1f6015a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-c3e5e03a206d9360af0c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-4a0005152544d60add76.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-0966c07232913aae6d5e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-e64eff0a2d0c66170fdf.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-52565113305bcf0f0ba5.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-401bd845ac112aa18b64.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton-Debug-d63539e6992857ed6b90.json",
+					"name" : "appButton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_autogen-Debug-2a767a804fc4b094607b.json",
+					"name" : "appButton_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_automoc_json_extraction-Debug-7500aa88451b8b1ae84b.json",
+					"name" : "appButton_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_qml-Debug-d644cf50a15f073caed2.json",
+					"name" : "appButton_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_res-Debug-915de9625d3bbc8a5cfd.json",
+					"name" : "appButton_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmlimportscan-Debug-c7d289f68a07ba761b90.json",
+					"name" : "appButton_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint-Debug-6144a48c47b7c2bcdeda.json",
+					"name" : "appButton_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_json-Debug-3f0cc8ca08265edf9113.json",
+					"name" : "appButton_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_module-Debug-85c4fd5f9a9eace97e07.json",
+					"name" : "appButton_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmltyperegistration-Debug-33d7e9a370c3ab495ffb.json",
+					"name" : "appButton_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-cef3b345503cd3e4c06f.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appButton_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appButton_aotstats_target-Debug-53a565f0260e822735aa.json",
+					"name" : "module_appButton_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-88eb7c975061778119ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Button",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-47be9ab10deed1f6015a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-c3e5e03a206d9360af0c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Release-4a0005152544d60add76.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Release-0966c07232913aae6d5e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Release-e64eff0a2d0c66170fdf.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Release-52565113305bcf0f0ba5.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Release-401bd845ac112aa18b64.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton-Release-73228b9d81d1e329c6d8.json",
+					"name" : "appButton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_autogen-Release-2a767a804fc4b094607b.json",
+					"name" : "appButton_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_automoc_json_extraction-Release-7500aa88451b8b1ae84b.json",
+					"name" : "appButton_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_qml-Release-d644cf50a15f073caed2.json",
+					"name" : "appButton_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_res-Release-915de9625d3bbc8a5cfd.json",
+					"name" : "appButton_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmlimportscan-Release-c7d289f68a07ba761b90.json",
+					"name" : "appButton_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint-Release-6144a48c47b7c2bcdeda.json",
+					"name" : "appButton_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_json-Release-3f0cc8ca08265edf9113.json",
+					"name" : "appButton_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_module-Release-85c4fd5f9a9eace97e07.json",
+					"name" : "appButton_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmltyperegistration-Release-33d7e9a370c3ab495ffb.json",
+					"name" : "appButton_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Release-cef3b345503cd3e4c06f.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appButton_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appButton_aotstats_target-Release-53a565f0260e822735aa.json",
+					"name" : "module_appButton_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-ec2c00ede767329d65c2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Button",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-47be9ab10deed1f6015a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-c3e5e03a206d9360af0c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-MinSizeRel-4a0005152544d60add76.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-MinSizeRel-0966c07232913aae6d5e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-MinSizeRel-e64eff0a2d0c66170fdf.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-MinSizeRel-52565113305bcf0f0ba5.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-MinSizeRel-401bd845ac112aa18b64.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton-MinSizeRel-8d82d9de29b8dd7d0a0a.json",
+					"name" : "appButton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_autogen-MinSizeRel-2a767a804fc4b094607b.json",
+					"name" : "appButton_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_automoc_json_extraction-MinSizeRel-7500aa88451b8b1ae84b.json",
+					"name" : "appButton_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_qml-MinSizeRel-d644cf50a15f073caed2.json",
+					"name" : "appButton_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_res-MinSizeRel-915de9625d3bbc8a5cfd.json",
+					"name" : "appButton_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmlimportscan-MinSizeRel-c7d289f68a07ba761b90.json",
+					"name" : "appButton_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint-MinSizeRel-6144a48c47b7c2bcdeda.json",
+					"name" : "appButton_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_json-MinSizeRel-3f0cc8ca08265edf9113.json",
+					"name" : "appButton_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_module-MinSizeRel-85c4fd5f9a9eace97e07.json",
+					"name" : "appButton_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmltyperegistration-MinSizeRel-33d7e9a370c3ab495ffb.json",
+					"name" : "appButton_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-MinSizeRel-cef3b345503cd3e4c06f.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appButton_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appButton_aotstats_target-MinSizeRel-53a565f0260e822735aa.json",
+					"name" : "module_appButton_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-09cfa13bb6caf5dfc921.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Button",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-47be9ab10deed1f6015a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-c3e5e03a206d9360af0c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-RelWithDebInfo-4a0005152544d60add76.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-RelWithDebInfo-0966c07232913aae6d5e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-RelWithDebInfo-e64eff0a2d0c66170fdf.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-RelWithDebInfo-52565113305bcf0f0ba5.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-RelWithDebInfo-401bd845ac112aa18b64.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton-RelWithDebInfo-b0eaf41cc8f3e311a011.json",
+					"name" : "appButton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_autogen-RelWithDebInfo-2a767a804fc4b094607b.json",
+					"name" : "appButton_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_automoc_json_extraction-RelWithDebInfo-7500aa88451b8b1ae84b.json",
+					"name" : "appButton_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_qml-RelWithDebInfo-d644cf50a15f073caed2.json",
+					"name" : "appButton_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_copy_res-RelWithDebInfo-915de9625d3bbc8a5cfd.json",
+					"name" : "appButton_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmlimportscan-RelWithDebInfo-c7d289f68a07ba761b90.json",
+					"name" : "appButton_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint-RelWithDebInfo-6144a48c47b7c2bcdeda.json",
+					"name" : "appButton_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_json-RelWithDebInfo-3f0cc8ca08265edf9113.json",
+					"name" : "appButton_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmllint_module-RelWithDebInfo-85c4fd5f9a9eace97e07.json",
+					"name" : "appButton_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appButton_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appButton_qmltyperegistration-RelWithDebInfo-33d7e9a370c3ab495ffb.json",
+					"name" : "appButton_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-RelWithDebInfo-cef3b345503cd3e4c06f.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appButton_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appButton_aotstats_target-RelWithDebInfo-53a565f0260e822735aa.json",
+					"name" : "module_appButton_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS",
+		"source" : "/Users/giovannigil/Button"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
