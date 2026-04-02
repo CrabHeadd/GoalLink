@@ -377,11 +377,20 @@ Qt6QmlWorkerScript_DIR:PATH=/Users/giovannigil/Qt/6.10.2/macos/lib/cmake/Qt6QmlW
 //The directory containing a CMake configuration file for Qt6Qml.
 Qt6Qml_DIR:PATH=/Users/giovannigil/Qt/6.10.2/macos/lib/cmake/Qt6Qml
 
+//The directory containing a CMake configuration file for Qt6Qt6Sql.
+Qt6Qt6Sql_DIR:PATH=Qt6Qt6Sql_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=/Users/giovannigil/Qt/6.10.2/macos/lib/cmake/Qt6QuickTools
 
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=/Users/giovannigil/Qt/6.10.2/macos/lib/cmake/Qt6Quick
+
+//The directory containing a CMake configuration file for Qt6SQLite3.
+Qt6SQLite3_DIR:PATH=Qt6SQLite3_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Qt6Sql.
+Qt6Sql_DIR:PATH=/Users/giovannigil/Qt/6.10.2/macos/lib/cmake/Qt6Sql
 
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=/Users/giovannigil/Qt/6.10.2/macos/lib/cmake/Qt6
@@ -1143,6 +1152,8 @@ QT_FEATURE_socks5:INTERNAL=ON
 QT_FEATURE_sortfilterproxymodel:INTERNAL=ON
 //Qt feature: sql (from target Qt6::Core)
 QT_FEATURE_sql:INTERNAL=ON
+//Qt feature: sqlmodel (from target Qt6::Sql)
+QT_FEATURE_sqlmodel:INTERNAL=ON
 //Qt feature: sse2 (from target Qt6::Core)
 QT_FEATURE_sse2:INTERNAL=ON
 //Qt feature: sse3 (from target Qt6::Core)

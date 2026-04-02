@@ -8,9 +8,9 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 2000,
+                            "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 19,
+                            "line": 15,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 31,
+                            "line": 27,
                             "message": ""
                         },
                         {
@@ -26,15 +26,39 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 36,
+                            "line": 32,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 38,
+                            "message": "Cannot access value for name sqlModel"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 41,
+                            "message": "Cannot access value for name title"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 42,
+                            "message": "Cannot access value for name content"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 46,
+                            "line": 50,
                             "message": ""
                         }
                     ],
