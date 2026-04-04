@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick.Controls
 
 Page{
+    id: root
+    property var sqlModel
     background: Rectangle{
         z: -1
         color: "black"
@@ -34,14 +36,6 @@ Page{
             width: 80
             height: 500
             radius: 10
-            ListView {
-                model: sqlModel
-
-                delegate: Column {
-                    Text { text: title }     // must match DB column name
-                    Text { text: content }
-                }
-            }
         }
     }
     Column{

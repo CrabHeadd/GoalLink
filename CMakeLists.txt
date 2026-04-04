@@ -4,12 +4,13 @@ project(Button VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Core Quick Sql)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appButton
     main.cpp
+    sqlMod.h
 )
 
 qt_add_qml_module(appButton
@@ -23,7 +24,6 @@ qt_add_qml_module(appButton
         "goalLink.db"
 )
 
-
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
@@ -36,7 +36,7 @@ set_target_properties(appButton PROPERTIES
 )
 
 target_link_libraries(appButton
-    PRIVATE Qt6::Quick
+    PRIVATE Qt6::Quick Qt6::Sql Qt6::Core
 )
 
 include(GNUInstallDirs)

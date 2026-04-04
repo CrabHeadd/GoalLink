@@ -6,6 +6,7 @@
 #define QT_QMLINTEGRATION_LIB 1
 #define QT_QML_LIB 1
 #define QT_QUICK_LIB 1
+#define QT_SQL_LIB 1
 #define SIZEOF_DPTR (sizeof(void*))
 #define _LP64 1
 #define __AARCH64EL__ 1
