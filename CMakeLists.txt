@@ -11,6 +11,7 @@ qt_standard_project_setup(REQUIRES 6.8)
 qt_add_executable(appButton
     main.cpp
     sqlMod.h
+    sqlMod.cpp
 )
 
 qt_add_qml_module(appButton
@@ -45,3 +46,4 @@ install(TARGETS appButton
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+

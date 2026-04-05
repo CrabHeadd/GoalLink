@@ -891,6 +891,7 @@
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg_va_list.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdarg.h \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QHash \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \

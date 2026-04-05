@@ -3,7 +3,10 @@ import QtQuick.Controls
 
 Page{
     id: root
-    property var sqlModel
+    required property var sqlModel
+    Component.onCompleted: {
+        console.log("MODEL:", root.sqlModel)
+    }
     background: Rectangle{
         z: -1
         color: "black"
@@ -33,9 +36,37 @@ Page{
             border.color: "#1A3328"
             anchors.horizontalCenter: parent.horizontalCenter
             border.width:2
-            width: 80
+            width: 200
             height: 500
             radius: 10
+            Repeater {
+                   model: sqlModel.column
+
+                   delegate: Text {
+                       color: "white"
+                       text: display
+                   }
+               }
+            /*
+            TableView {
+                anchors.fill: parent
+                anchors.horizontalCenter: parent.horizontalCenter
+                model: root.sqlModel
+                delegate: Rectangle {
+                    implicitWidth: 50
+                    color: "#00e5a0"
+                    implicitHeight: 40
+                    border.width: 1
+                    radius: 10
+                    Component.onCompleted: {
+                        console.log("row:", row, "col:", column, "data:", modelData)
+                    }
+                    Text {
+                        anchors.centerIn: parent
+                        text: display
+                    }
+                }
+            }*/
         }
     }
     Column{

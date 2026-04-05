@@ -4,6 +4,10 @@ import QtQuick.Layouts
 
 Window {
     id: win
+    required property var sqlModel
+    Component.onCompleted: {
+        console.log("MODEL:", win.sqlModel)
+    }
     width: 640
     height: 480
     visible: true
@@ -126,7 +130,9 @@ Window {
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            change.push("Home.qml")
+                            change.push("Home.qml",{
+                                            sqlModel: sqlModel
+                                        })
                         }
                     }
                 }
@@ -151,7 +157,9 @@ Window {
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            change.push("Home.qml")
+                            change.push("Home.qml",{
+                                            sqlModel: sqlModel
+                                        })
                         }
                     }
                 }
@@ -164,6 +172,7 @@ Window {
     StackView{
         id:change
         anchors.fill: parent
+
     }
 
     /*
