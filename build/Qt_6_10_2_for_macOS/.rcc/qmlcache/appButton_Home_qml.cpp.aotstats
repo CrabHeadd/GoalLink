@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 1000,
                             "functionName": "onCompleted",
                             "line": 7,
                             "message": "Cannot retrieve a non-object type by ID: root"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 1000,
                             "functionName": "right",
                             "line": 20,
                             "message": ""
@@ -30,35 +30,67 @@
                             "message": ""
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 39,
+                            "codegenResult": 2,
+                            "column": 20,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 37,
+                            "functionName": "model",
+                            "line": 36,
+                            "message": "Cannot retrieve a non-object type by ID: root"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 35,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 49,
+                            "message": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 51,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 43,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 52,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
                             "durationMicroseconds": 0,
-                            "functionName": "model",
-                            "line": 43,
-                            "message": "Cannot access value for name sqlModel"
+                            "functionName": "text",
+                            "line": 58,
+                            "message": "Cannot access value for name model"
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 30,
+                            "codegenResult": 0,
+                            "column": 35,
                             "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 47,
-                            "message": "Cannot access value for name display"
+                            "functionName": "left",
+                            "line": 57,
+                            "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 75,
+                            "line": 90,
                             "message": ""
                         }
                     ],

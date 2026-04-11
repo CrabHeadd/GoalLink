@@ -1012,9 +1012,11 @@
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/QSqlRelationalTableModel \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/QSqlTableModel \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqldatabase.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqlquerymodel.h \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqlrelationaltablemodel.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqltablemodel.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qtsql-config.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qtsqlexports.h \

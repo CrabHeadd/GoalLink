@@ -8,6 +8,7 @@
 #include <QFileInfo>
 #include <QDir>
 #include <QQmlContext>
+#include "sqlMod.h"
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
@@ -31,9 +32,10 @@ int main(int argc, char *argv[])
     qDebug() << "Exists:" << QFile::exists(Db.databaseName());
     qDebug() << "Size:" << QFileInfo(Db.databaseName()).size();
     qDebug() << "Tables:" << Db.tables();
-    QSqlTableModel model{nullptr, Db};
+    sqlMod model{nullptr, Db};
     model.setTable("posts");
     model.setEditStrategy(QSqlTableModel::OnFieldChange);
+    model.setRelation(3,QSqlRelation("accounts","accID","username"));
     if(model.select()){
         qDebug() << "Db loaded";
     }

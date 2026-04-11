@@ -3,13 +3,13 @@
         "classes": [
             {
                 "className": "sqlMod",
-                "lineNumber": 8,
+                "lineNumber": 9,
                 "object": true,
                 "qualifiedClassName": "sqlMod",
                 "superClasses": [
                     {
                         "access": "public",
-                        "name": "QSqlTableModel"
+                        "name": "QSqlRelationalTableModel"
                     }
                 ]
             }

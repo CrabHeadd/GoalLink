@@ -31,44 +31,59 @@ Page{
     Column{
         anchors.centerIn: parent
         id: cM
-        Rectangle{
-            color: "#0A1A12"
-            border.color: "#1A3328"
-            anchors.horizontalCenter: parent.horizontalCenter
-            border.width:2
-            width: 200
-            height: 500
-            radius: 10
-            Repeater {
-                   model: sqlModel.column
+        Repeater {
+            anchors.fill: parent
+            model: root.sqlModel
 
-                   delegate: Text {
-                       color: "white"
-                       text: display
-                   }
-               }
-            /*
-            TableView {
-                anchors.fill: parent
-                anchors.horizontalCenter: parent.horizontalCenter
-                model: root.sqlModel
-                delegate: Rectangle {
-                    implicitWidth: 50
-                    color: "#00e5a0"
-                    implicitHeight: 40
-                    border.width: 1
-                    radius: 10
-                    Component.onCompleted: {
-                        console.log("row:", row, "col:", column, "data:", modelData)
-                    }
+            delegate: Rectangle {
+                height: 100
+                width: 100
+                radius: 10
+                color: "#0A1A12"
+                border.color: "#1A3328"
+                Rectangle{
+                    id: profilePic
+                    radius: 40
+                    height: 40
+                    width: 40
+                    color: Qt.rgba(Math.random(),Math.random(),Math.random(),1);
                     Text {
+                        text: model.letter
                         anchors.centerIn: parent
-                        text: display
+                        color: "white"
                     }
                 }
-            }*/
+                Text {
+                    anchors.left: profilePic.right
+                    text: model.accID
+                    color: "black"
+                }
+            }
+            Row{
+                height: 10
+            }
         }
     }
+    /*
+    TableView {
+        anchors.fill: parent
+        anchors.horizontalCenter: parent.horizontalCenter
+        model: root.sqlModel
+        delegate: Rectangle {
+            implicitWidth: 50
+            color: "#00e5a0"
+            implicitHeight: 40
+            border.width: 1
+            radius: 10
+            Component.onCompleted: {
+                console.log("row:", row, "col:", column, "data:", modelData)
+            }
+            Text {
+                anchors.centerIn: parent
+                text: display
+            }
+        }
+    }*/
     Column{
         id: cR
         anchors.leftMargin: 50
