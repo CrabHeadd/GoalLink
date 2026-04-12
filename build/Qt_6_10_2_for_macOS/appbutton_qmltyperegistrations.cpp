@@ -7,6 +7,9 @@
 #include <QtQml/qqml.h>
 #include <QtQml/qqmlmoduleregistration.h>
 
+#if __has_include(<login.h>)
+#  include <login.h>
+#endif
 
 
 #if !defined(QT_STATIC)
@@ -18,6 +21,7 @@ Q_QMLTYPE_EXPORT void qml_register_types_Button()
 {
     qmlRegisterModule("Button", 254, 0);
     QT_WARNING_PUSH QT_WARNING_DISABLE_DEPRECATED
+    qmlRegisterTypesAndRevisions<login>("Button", 254);
     QT_WARNING_POP
     qmlRegisterModule("Button", 254, 254);
 }

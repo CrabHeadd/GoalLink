@@ -2,6 +2,64 @@
     {
         "classes": [
             {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "login",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pss",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 15,
+                        "name": "checkLogin",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "login",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "res",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 17,
+                        "name": "result",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "login.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "sqlMod",
                 "lineNumber": 9,
                 "object": true,

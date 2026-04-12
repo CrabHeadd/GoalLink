@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     qDebug() << "Size:" << QFileInfo(Db.databaseName()).size();
     qDebug() << "Tables:" << Db.tables();
     sqlMod model{nullptr, Db};
-    model.setTable("posts");
+    model.setQuery("select * from posts join accounts on posts.accID == accounts.accID;");
     model.setEditStrategy(QSqlTableModel::OnFieldChange);
     model.setRelation(3,QSqlRelation("accounts","accID","username"));
     if(model.select()){

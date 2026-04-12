@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import Button
 
 Window {
     id: win
@@ -8,6 +9,10 @@ Window {
     Component.onCompleted: {
         console.log("MODEL:", win.sqlModel)
     }
+    login{
+
+    }
+
     width: 640
     height: 480
     visible: true

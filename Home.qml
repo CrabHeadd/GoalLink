@@ -36,13 +36,18 @@ Page{
             model: root.sqlModel
 
             delegate: Rectangle {
+                id: rec
                 height: 100
-                width: 100
+                width: 200
                 radius: 10
                 color: "#0A1A12"
                 border.color: "#1A3328"
                 Rectangle{
                     id: profilePic
+                    anchors.left: rec.left
+                    anchors.leftMargin: 10
+                    anchors.top: rec.top
+                    anchors.topMargin: 10
                     radius: 40
                     height: 40
                     width: 40
@@ -54,13 +59,35 @@ Page{
                     }
                 }
                 Text {
+                    id: username
                     anchors.left: profilePic.right
-                    text: model.accID
-                    color: "black"
+                    anchors.leftMargin: 10
+                    anchors.top: profilePic.top
+                    anchors.topMargin: 10
+                    text: model.username
+                    color: "white"
                 }
+                Rectangle{
+                    visible: model.isRecruiter==1
+                    width: 100
+                    height: 20
+                    anchors.left: username.right
+                    anchors.leftMargin: 10
+                    anchors.top:username.top
+                    color: "#015b74"
+                    border.color: "#3b9dff"
+                    border.width: 1
+                    radius: 10
+                    Text {
+                        text: "Recruiter"
+                        color: "white"
+                        anchors.centerIn: parent
+                    }
+                }
+
             }
             Row{
-                height: 10
+                height: 100
             }
         }
     }

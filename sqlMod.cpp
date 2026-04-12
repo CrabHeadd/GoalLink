@@ -9,6 +9,8 @@ QHash<int, QByteArray> sqlMod::roleNames() const
     roles[Qt::UserRole+3] = QByteArray("likes");
     roles[Qt::UserRole+4] = QByteArray("accID");
     roles[Qt::UserRole+5] = QByteArray("letter");
+    roles[Qt::UserRole+6] = QByteArray("username");
+    roles[Qt::UserRole+8] = QByteArray("isRecruiter");
     return roles;
 }
 
@@ -23,7 +25,7 @@ QVariant sqlMod::data(const QModelIndex &index, int role) const
     if (role < Qt::UserRole)
         return QSqlTableModel::data(index, role);
     if (role == Qt::UserRole+5){
-        QModelIndex in = this->index(index.row(),3);
+        QModelIndex in = this->index(index.row(),5);
         QVariant val = QSqlRelationalTableModel::data(in,Qt::DisplayRole);
         QString letr = val.toString();
         if (!letr.isEmpty())
