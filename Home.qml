@@ -84,7 +84,12 @@ Page{
                         anchors.centerIn: parent
                     }
                 }
-
+                Text {
+                    anchors.top: profilePic.bottom
+                    anchors.topMargin: 20
+                    color: "white"
+                    text: model.description
+                }
             }
             Row{
                 height: 100

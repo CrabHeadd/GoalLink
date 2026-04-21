@@ -9,10 +9,10 @@ Module {
     Component {
         file: "login.h"
         lineNumber: 8
-        name: "login"
+        name: "Login"
         accessSemantics: "reference"
         prototype: "QObject"
-        exports: ["Button/login 254.0"]
+        exports: ["Button/Login 254.0"]
         exportMetaObjectRevisions: [65024]
         Signal {
             name: "result"

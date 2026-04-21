@@ -142,11 +142,27 @@
                             "message": ""
                         },
                         {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 91,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 88,
+                            "message": ""
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 117,
+                            "line": 122,
                             "message": ""
                         }
                     ],

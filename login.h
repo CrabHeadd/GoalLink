@@ -5,13 +5,13 @@
 #include <QSqlQuery>
 #include <QSqlDatabase>
 
-class login : public QObject
+class Login : public QObject
 {
     Q_OBJECT
     QML_ELEMENT
     QSqlDatabase data;
 public:
-    explicit login(QObject *parent = nullptr);
+    explicit Login(QObject *parent = nullptr);
     Q_INVOKABLE void checkLogin(QString usr, QString pss);
 signals:
     void result(int res);

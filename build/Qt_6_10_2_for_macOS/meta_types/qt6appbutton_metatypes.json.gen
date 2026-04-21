@@ -8,7 +8,7 @@
                         "value": "auto"
                     }
                 ],
-                "className": "login",
+                "className": "Login",
                 "lineNumber": 8,
                 "methods": [
                     {
@@ -30,7 +30,7 @@
                     }
                 ],
                 "object": true,
-                "qualifiedClassName": "login",
+                "qualifiedClassName": "Login",
                 "signals": [
                     {
                         "access": "public",

@@ -9,8 +9,13 @@ Window {
     Component.onCompleted: {
         console.log("MODEL:", win.sqlModel)
     }
-    login{
-
+    property bool login : false
+    property bool attempt : false
+    Login{
+        id: log
+        onResult:(accID)=>{
+                   login = accID
+               }
     }
 
     width: 640
@@ -106,12 +111,14 @@ Window {
                     }
                 }
                 TextField{
+                    id: usernameField
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: 65
                     width: 258
                 }
                 TextField{
+                    id: passwordField
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: 125
@@ -135,9 +142,11 @@ Window {
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            change.push("Home.qml",{
-                                            sqlModel: sqlModel
-                                        })
+                            log.checkLogin(usernameField.text,passwordField.text)
+                            attempt=true
+//                            change.push("Home.qml",{
+//                                            sqlModel: sqlModel
+//                                        })
                         }
                     }
                 }
@@ -162,17 +171,25 @@ Window {
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            change.push("Home.qml",{
-                                            sqlModel: sqlModel
-                                        })
+                            log.checkLogin(usernameField.text,passwordField.text)
+                            attempt=true
+//                            change.push("Home.qml",{
+//                                            sqlModel: sqlModel
+//                                        })
                         }
                     }
                 }
 
-
-            }
         }
-
+            Popup{
+                visible: !login && attempt
+                anchors.centerIn: parent
+                Text {
+                    text: "invalid login"
+                    color: "white"
+                }
+            }
+            }
     }
     StackView{
         id:change

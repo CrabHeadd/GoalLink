@@ -1,19 +1,31 @@
 #include "login.h"
+#include <qdebug.h>
 
-login::login(QObject *parent)
+Login::Login(QObject *parent)
     : QObject{parent}
-{   data = QSqlDatabase::addDatabase("SQLITE");
+{   data = QSqlDatabase::addDatabase("QSQLITE");
     data.setDatabaseName("/Users/giovannigil/Button/goalLink.db");
-    data.open();}
+    if(data.open()){
+        qDebug() << "great";
+    }
+}
 
-void login::checkLogin(QString usr, QString pss)
+void Login::checkLogin(QString usr, QString pss)
 {
     QSqlQuery quer(data);
-    quer.prepare("select accID from accounts where username = :userIn and password = :passIn");
+    if(quer.prepare("select accID from accounts where username = :userIn and password = :passIn")){
+        qDebug() << "here";
+    }
     quer.bindValue(":userIn",usr);
     quer.bindValue(":passIn",pss);
-    if (quer.exec() && quer.next()){
-        int accID = quer.value("accID").toInt();
-        emit result(accID);
+    if (quer.exec()){
+        qDebug() << "exec" << quer.isActive() << quer.isSelect();
+        if(quer.next()){
+            qDebug() <<"hi" << quer.value("accID");
+            int accID = quer.value("accID").toBool();
+            emit result(accID);
+            return;
+        }
+        emit result(false);
     }
 }

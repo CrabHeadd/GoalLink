@@ -8,9 +8,25 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 1000,
+                            "durationMicroseconds": 0,
                             "functionName": "onCompleted",
                             "line": 9,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "onResult",
+                            "line": 16,
+                            "message": "Cannot find name login"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "onResult",
+                            "line": 16,
                             "message": ""
                         },
                         {
@@ -18,7 +34,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 22,
+                            "line": 27,
                             "message": ""
                         },
                         {
@@ -26,7 +42,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 24,
+                            "line": 29,
                             "message": ""
                         },
                         {
@@ -34,7 +50,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 32,
+                            "line": 37,
                             "message": ""
                         },
                         {
@@ -42,15 +58,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 53,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 62,
+                            "line": 58,
                             "message": ""
                         },
                         {
@@ -65,65 +73,57 @@
                             "codegenResult": 0,
                             "column": 39,
                             "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 78,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 80,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 88,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 90,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 98,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 100,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 47,
-                            "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 109,
-                            "message": "Could not find property \"horizontalCenter\"."
+                            "line": 72,
+                            "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 34,
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 83,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 110,
-                            "message": "Could not find property \"top\"."
+                            "line": 85,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 93,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 38,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 95,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 103,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 38,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 105,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
@@ -142,11 +142,27 @@
                             "message": "Could not find property \"top\"."
                         },
                         {
+                            "codegenResult": 2,
+                            "column": 47,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 122,
+                            "message": "Could not find property \"horizontalCenter\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 123,
+                            "message": "Could not find property \"top\"."
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 123,
+                            "line": 130,
                             "message": ""
                         },
                         {
@@ -154,7 +170,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 124,
+                            "line": 131,
                             "message": ""
                         },
                         {
@@ -162,7 +178,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 131,
+                            "line": 138,
                             "message": ""
                         },
                         {
@@ -170,7 +186,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 133,
+                            "line": 140,
                             "message": ""
                         },
                         {
@@ -178,15 +194,15 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 137,
-                            "message": "Cannot retrieve a non-object type by ID: change"
+                            "line": 144,
+                            "message": "Cannot retrieve a non-object type by ID: usernameField"
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 136,
+                            "line": 143,
                             "message": ""
                         },
                         {
@@ -194,7 +210,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 145,
+                            "line": 154,
                             "message": "Cannot load property color from (component in /Users/giovannigil/Button/Main.qml)::parent with type QQuickItem."
                         },
                         {
@@ -202,7 +218,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 149,
+                            "line": 158,
                             "message": ""
                         },
                         {
@@ -210,7 +226,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 150,
+                            "line": 159,
                             "message": ""
                         },
                         {
@@ -218,7 +234,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 158,
+                            "line": 167,
                             "message": ""
                         },
                         {
@@ -226,7 +242,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 160,
+                            "line": 169,
                             "message": ""
                         },
                         {
@@ -234,23 +250,39 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 164,
-                            "message": "Cannot retrieve a non-object type by ID: change"
+                            "line": 173,
+                            "message": "Cannot retrieve a non-object type by ID: usernameField"
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 163,
+                            "line": 172,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 185,
+                            "message": "Could not find property \"visible\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 186,
+                            "message": "Could not find property \"centerIn\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 179,
+                            "line": 196,
                             "message": "Could not find property \"fill\"."
                         }
                     ],
