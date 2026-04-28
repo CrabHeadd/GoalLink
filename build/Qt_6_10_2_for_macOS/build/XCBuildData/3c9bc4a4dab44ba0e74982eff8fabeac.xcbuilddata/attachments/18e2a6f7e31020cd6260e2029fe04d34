@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+if test "$CONFIGURATION" = "Debug"; then :
+  cd /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS
+  /Users/giovannigil/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache
+  /Users/giovannigil/Qt/6.10.2/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/Button/Main.qml -I /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS -I /Users/giovannigil/Qt/6.10.2/macos/qml -i /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/qmldir --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/qmake_Button.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_qml_0.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_res_0.qrc --dump-aot-stats "--module-id=Button(appButton)" -o /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache/appButton_Main_qml.cpp /Users/giovannigil/Button/Main.qml
+fi
+if test "$CONFIGURATION" = "Release"; then :
+  cd /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS
+  /Users/giovannigil/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache
+  /Users/giovannigil/Qt/6.10.2/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/Button/Main.qml -I /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS -I /Users/giovannigil/Qt/6.10.2/macos/qml -i /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/qmldir --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/qmake_Button.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_qml_0.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_res_0.qrc --dump-aot-stats "--module-id=Button(appButton)" -o /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache/appButton_Main_qml.cpp /Users/giovannigil/Button/Main.qml
+fi
+if test "$CONFIGURATION" = "MinSizeRel"; then :
+  cd /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS
+  /Users/giovannigil/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache
+  /Users/giovannigil/Qt/6.10.2/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/Button/Main.qml -I /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS -I /Users/giovannigil/Qt/6.10.2/macos/qml -i /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/qmldir --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/qmake_Button.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_qml_0.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_res_0.qrc --dump-aot-stats "--module-id=Button(appButton)" -o /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache/appButton_Main_qml.cpp /Users/giovannigil/Button/Main.qml
+fi
+if test "$CONFIGURATION" = "RelWithDebInfo"; then :
+  cd /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS
+  /Users/giovannigil/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache
+  /Users/giovannigil/Qt/6.10.2/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/Button/Main.qml -I /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS -I /Users/giovannigil/Qt/6.10.2/macos/qml -i /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/qmldir --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/qmake_Button.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_qml_0.qrc --resource /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/rcc/appButton_raw_res_0.qrc --dump-aot-stats "--module-id=Button(appButton)" -o /Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.rcc/qmlcache/appButton_Main_qml.cpp /Users/giovannigil/Button/Main.qml
+fi
+

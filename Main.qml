@@ -1,7 +1,9 @@
 import QtQuick
+import QtQuick 2.0
 import QtQuick.Controls
 import QtQuick.Layouts
 import Button
+
 
 Window {
     id: win
@@ -17,6 +19,13 @@ Window {
                    login = accID
                }
     }
+    onLoginChanged: {
+        if (login){
+            change.push("Home.qml",{sqlModel:sqlModel})
+        }
+    }
+
+
 
     width: 640
     height: 480
@@ -28,6 +37,7 @@ Window {
         Row{
             anchors.horizontalCenter: parent.horizontalCenter
             Rectangle{
+
                 id: logo
                 height: 50
                 width: 120
@@ -173,22 +183,23 @@ Window {
                         onClicked:{
                             log.checkLogin(usernameField.text,passwordField.text)
                             attempt=true
-//                            change.push("Home.qml",{
-//                                            sqlModel: sqlModel
-//                                        })
                         }
+                    }
+                }
+                Text {
+                    visible: !login && attempt
+                    anchors.right: parent.horizontalCenter
+                    anchors.rightMargin: 35
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: 10
+
+                    Text {
+                        text: "invalid login"
+                        color: "white"
                     }
                 }
 
         }
-            Popup{
-                visible: !login && attempt
-                anchors.centerIn: parent
-                Text {
-                    text: "invalid login"
-                    color: "white"
-                }
-            }
             }
     }
     StackView{

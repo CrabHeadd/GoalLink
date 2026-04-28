@@ -85,10 +85,20 @@ Page{
                     }
                 }
                 Text {
+                    id: description
                     anchors.top: profilePic.bottom
-                    anchors.topMargin: 20
+                    anchors.topMargin: 15
+                    anchors.left: parent.left
+                    anchors.leftMargin: 10
                     color: "white"
                     text: model.description
+                }
+                Rectangle{
+                    width: 50
+                    height: 1
+                    anchors.top: description.bottom
+                    anchors.topMargin: 5
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
             }
             Row{
@@ -96,26 +106,6 @@ Page{
             }
         }
     }
-    /*
-    TableView {
-        anchors.fill: parent
-        anchors.horizontalCenter: parent.horizontalCenter
-        model: root.sqlModel
-        delegate: Rectangle {
-            implicitWidth: 50
-            color: "#00e5a0"
-            implicitHeight: 40
-            border.width: 1
-            radius: 10
-            Component.onCompleted: {
-                console.log("row:", row, "col:", column, "data:", modelData)
-            }
-            Text {
-                anchors.centerIn: parent
-                text: display
-            }
-        }
-    }*/
     Column{
         id: cR
         anchors.leftMargin: 50
