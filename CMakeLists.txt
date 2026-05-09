@@ -25,6 +25,7 @@ qt_add_qml_module(appButton
         "socc1.jpg"
         "logo.png"
         "goalLink.db"
+        "heart.png"
 )
 
 

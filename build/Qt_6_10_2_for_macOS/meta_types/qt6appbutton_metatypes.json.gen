@@ -38,6 +38,10 @@
                             {
                                 "name": "res",
                                 "type": "int"
+                            },
+                            {
+                                "name": "position",
+                                "type": "QString"
                             }
                         ],
                         "index": 0,

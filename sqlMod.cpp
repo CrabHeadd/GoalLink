@@ -11,6 +11,7 @@ QHash<int, QByteArray> sqlMod::roleNames() const
     roles[Qt::UserRole+5] = QByteArray("letter");
     roles[Qt::UserRole+6] = QByteArray("username");
     roles[Qt::UserRole+8] = QByteArray("isRecruiter");
+    roles[Qt::UserRole+9] = QByteArray("position");
     return roles;
 }
 

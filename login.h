@@ -14,7 +14,7 @@ public:
     explicit Login(QObject *parent = nullptr);
     Q_INVOKABLE void checkLogin(QString usr, QString pss);
 signals:
-    void result(int res);
+    void result(int res,QString position);
 };
 
 #endif // LOGIN_H

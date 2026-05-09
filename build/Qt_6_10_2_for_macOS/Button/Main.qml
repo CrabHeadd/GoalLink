@@ -13,15 +13,19 @@ Window {
     }
     property bool login : false
     property bool attempt : false
+    property string userName: ""
+    property string qmlposition: ""
     Login{
         id: log
-        onResult:(accID)=>{
+        onResult:(accID,position)=>{
                    login = accID
+                     qmlposition = position
                }
     }
     onLoginChanged: {
         if (login){
-            change.push("Home.qml",{sqlModel:sqlModel})
+            userName = usernameField.text
+            change.push("Home.qml",{sqlModel:sqlModel,userName:userName,qmlposition:qmlposition})
         }
     }
 

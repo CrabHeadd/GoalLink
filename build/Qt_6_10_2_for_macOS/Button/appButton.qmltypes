@@ -18,6 +18,7 @@ Module {
             name: "result"
             lineNumber: 17
             Parameter { name: "res"; type: "int" }
+            Parameter { name: "position"; type: "QString" }
         }
         Method {
             name: "checkLogin"

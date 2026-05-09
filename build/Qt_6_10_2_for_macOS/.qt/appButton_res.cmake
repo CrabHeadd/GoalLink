@@ -8,6 +8,8 @@ set(src_and_dest_list
     "/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/logo.png"
     "/Users/giovannigil/Button/goalLink.db"
     "/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/goalLink.db"
+    "/Users/giovannigil/Button/heart.png"
+    "/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/Button/heart.png"
 
 )
 set(timestamp_file "/Users/giovannigil/Button/build/Qt_6_10_2_for_macOS/.qt/appButton_res.txt")

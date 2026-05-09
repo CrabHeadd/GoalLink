@@ -4,9 +4,8 @@ import QtQuick.Controls
 Page{
     id: root
     required property var sqlModel
-    Component.onCompleted: {
-        console.log("MODEL:", root.sqlModel)
-    }
+    required property var userName
+    required property var qmlposition
     background: Rectangle{
         z: -1
         color: "black"
@@ -20,12 +19,37 @@ Page{
         anchors.right: cM.left
         id: cL
         Rectangle{
+            Rectangle{
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                radius: 10
+                color: "#00e5a0"
+                width: 76
+                height: 50
+                Rectangle{
+                    id: flat
+                    anchors.bottom: parent.bottom
+                    height:10
+                    width: 76
+                    color: "#00e5a0"
+                }
+            }
+
             color: "#0A1A12"
             border.width: 2
             width: 80
             border.color: "#1A3328"
             height: 500
             radius: 10
+            Text {
+                text: userName
+                anchors.top: flat.bottom
+                anchors.topMargin: 5
+                color: "white"
+            }
+            Text {
+                text: "piss"
+            }
         }
     }
     Column{
@@ -37,7 +61,7 @@ Page{
 
             delegate: Rectangle {
                 id: rec
-                height: 100
+                height: 150
                 width: 200
                 radius: 10
                 color: "#0A1A12"
@@ -94,11 +118,34 @@ Page{
                     text: model.description
                 }
                 Rectangle{
-                    width: 50
+                    id: divider
+                    width: 70
                     height: 1
                     anchors.top: description.bottom
                     anchors.topMargin: 5
                     anchors.horizontalCenter: parent.horizontalCenter
+                    color: "#1A3328"
+                }
+                Image {
+                    source: "heart.png"
+                    anchors.right: likes.left
+                    anchors.rightMargin: 5
+                    anchors.top: likes.top
+                    anchors.topMargin: 3
+                    height: 10
+                    width: 10
+                    MouseArea{
+                        onClicked: {}
+                    }
+                }
+                Text {
+                    id: likes
+                    color: "white"
+                    text: model.likes
+                    anchors.top: divider.bottom
+                    anchors.topMargin: 5
+                    anchors.left: parent.left
+                    anchors.leftMargin: 20
                 }
             }
             Row{

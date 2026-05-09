@@ -13,19 +13,23 @@ Login::Login(QObject *parent)
 void Login::checkLogin(QString usr, QString pss)
 {
     QSqlQuery quer(data);
-    if(quer.prepare("select accID from accounts where username = :userIn and password = :passIn")){
-        qDebug() << "here";
-    }
+    quer.prepare("select accID from accounts where username = :userIn and password = :passIn");
     quer.bindValue(":userIn",usr);
     quer.bindValue(":passIn",pss);
     if (quer.exec()){
         qDebug() << "exec" << quer.isActive() << quer.isSelect();
         if(quer.next()){
-            qDebug() <<"hi" << quer.value("accID");
             int accID = quer.value("accID").toBool();
-            emit result(accID);
+            int position = quer.value("position").toString();
+            emit result(accID,position);
             return;
         }
-        emit result(false);
+        emit result(false,QString(""));
     }
 }
+/*
+void Login::getUserData(int accID){
+    QSqlQueryquer(data);
+    quer.prepare("select")
+}
+*/

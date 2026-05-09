@@ -46,6 +46,7 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         "result",
         "",
         "res",
+        "position",
         "checkLogin",
         "usr",
         "pss"
@@ -53,12 +54,12 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'result'
-        QtMocHelpers::SignalData<void(int)>(3, 4, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 5 },
+        QtMocHelpers::SignalData<void(int, QString)>(3, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 5 }, { QMetaType::QString, 6 },
         }}),
         // Method 'checkLogin'
-        QtMocHelpers::MethodData<void(QString, QString)>(6, 4, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 7 }, { QMetaType::QString, 8 },
+        QtMocHelpers::MethodData<void(QString, QString)>(7, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 8 }, { QMetaType::QString, 9 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -87,13 +88,13 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     auto *_t = static_cast<Login *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->result((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 0: _t->result((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         case 1: _t->checkLogin((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (Login::*)(int )>(_a, &Login::result, 0))
+        if (QtMocHelpers::indexOfMethod<void (Login::*)(int , QString )>(_a, &Login::result, 0))
             return;
     }
 }
@@ -130,8 +131,8 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Login::result(int _t1)
+void Login::result(int _t1, QString _t2)
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
+    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2);
 }
 QT_WARNING_POP
