@@ -53,7 +53,9 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         "pss",
         "getlikes",
         "accID",
-        "postID"
+        "postID",
+        "addPost",
+        "text"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -72,6 +74,10 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         // Method 'getlikes'
         QtMocHelpers::MethodData<bool(int, int)>(11, 4, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 12 }, { QMetaType::Int, 13 },
+        }}),
+        // Method 'addPost'
+        QtMocHelpers::MethodData<void(int, QString)>(14, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 12 }, { QMetaType::QString, 15 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -105,6 +111,7 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         case 2: _t->checkLogin((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         case 3: { bool _r = _t->getlikes((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 4: _t->addPost((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
@@ -135,14 +142,14 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

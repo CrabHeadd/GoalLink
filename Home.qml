@@ -12,8 +12,23 @@ Page{
         z: -1
         color: "black"
     }
-    header: ToolBar{
+    header:
+        ToolBar{
+
+        background: Rectangle{
+            id: rectan
+            color: "#0A1A12"
+            border.width: 2
+            border.color: "#1A3328"
+            width: root.width
+            height: 50
+
+        }
+
         Rectangle{
+            anchors.top: parent.top
+            anchors.topMargin: 2
+            anchors.right: parent.right
             border.width: 2
             border.color: "#1A3328"
             color: "#0A1A12"
@@ -24,12 +39,13 @@ Page{
                 id: name
                 text: qsTr("Sign Out")
                 anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
                 color: "white"
             }
             MouseArea{
                 anchors.fill: parent
                 onClicked: {
-                    change.push("Main.qml")
+                    change.push("login.qml")
                 }
             }
         }
@@ -37,9 +53,31 @@ Page{
     Login{
         id: log2
     }
+    TextArea{
+        id: newPost
+        width: 50
+        height: 10
+        z: 10
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 20
+    }
+    Button{
+        onClicked: {
+            log2.addPost(login,newPost.text)
+            root.sqlModel.select()
+
+        }
+        z: 10
+        width: 50
+        height: 10
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 10
+    }
+
     Column{
         anchors.rightMargin: 50
         anchors.right: cM.left
+        anchors.top: bar.bottom
         id: cL
         Rectangle{
             Rectangle{
@@ -81,6 +119,7 @@ Page{
     Column{
         anchors.centerIn: parent
         id: cM
+        anchors.top: bar
         Repeater {
             anchors.fill: parent
             model: root.sqlModel
@@ -182,6 +221,7 @@ Page{
         }
     }
     Column{
+        anchors.top: bar
         id: cR
         anchors.leftMargin: 50
         anchors.left: cM.right

@@ -9,6 +9,9 @@
 #include <QDir>
 #include <QQmlContext>
 #include "sqlMod.h"
+#include <QStandardPaths>
+
+
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
@@ -22,10 +25,13 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
 
 
-    QString path = QDir::currentPath() + "";
+    //QString path = QDir::currentPath() + "";
+    //QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db";
     QSqlDatabase Db = QSqlDatabase::addDatabase("QSQLITE");
-    Db.setDatabaseName("/Users/giovannigil/Button/goalLink.db");
+    QString path = QCoreApplication::applicationDirPath() + "/goalLink.db";
+    Db.setDatabaseName(path);
     if (!Db.open()) {
+        qDebug() << "INVALID DATABASE " << path;
         return -1;
     }
     qDebug() << "Path:" << Db.databaseName();

@@ -1387,8 +1387,12 @@
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtQml.framework/Versions/A/Headers/qtqmlversion.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/QSqlDatabase \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/QSqlQuery \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/QSqlRelationalTableModel \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqldatabase.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqlquery.h \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqlquerymodel.h \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqlrelationaltablemodel.h \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qsqltablemodel.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qtsql-config.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qtsqlexports.h \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtSql.framework/Versions/A/Headers/qtsqlglobal.h

@@ -9,7 +9,7 @@
                     }
                 ],
                 "className": "Login",
-                "lineNumber": 8,
+                "lineNumber": 9,
                 "methods": [
                     {
                         "access": "public",
@@ -24,7 +24,7 @@
                             }
                         ],
                         "index": 2,
-                        "lineNumber": 15,
+                        "lineNumber": 16,
                         "name": "checkLogin",
                         "returnType": "void"
                     },
@@ -41,9 +41,26 @@
                             }
                         ],
                         "index": 3,
-                        "lineNumber": 16,
+                        "lineNumber": 17,
                         "name": "getlikes",
                         "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 18,
+                        "name": "addPost",
+                        "returnType": "void"
                     }
                 ],
                 "object": true,
@@ -62,7 +79,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 18,
+                        "lineNumber": 20,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -75,7 +92,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 19,
+                        "lineNumber": 21,
                         "name": "liked",
                         "returnType": "void"
                     }

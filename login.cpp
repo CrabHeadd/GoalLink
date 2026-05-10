@@ -1,4 +1,5 @@
 #include "login.h"
+
 #include <qdebug.h>
 
 Login::Login(QObject *parent)
@@ -50,3 +51,25 @@ bool Login::getlikes(int accID,int postID){
     return false;
 }
 
+void Login::addPost(int accID, QString text){
+    int nextID;
+    QSqlQuery quer(data);
+    quer.prepare("select max(postID) from posts;");
+    if(quer.exec()){
+        if(quer.next()){
+            nextID = quer.value("max(postID)").toInt();
+            nextID +=1;
+            qDebug() << nextID;
+
+            QSqlQuery quer2(data);
+            quer2.prepare("insert into posts(postID,description,likes,accID) values (:pID,:tex,0,:aID);");
+            quer2.bindValue(":aID",accID);
+            quer2.bindValue(":pID",nextID);
+            quer2.bindValue(":tex",text);
+            if(quer2.exec()){
+                qDebug() << "success";
+            }
+        }
+    }
+
+}
