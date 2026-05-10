@@ -1,54 +1,80 @@
 import QtQuick
 import QtQuick.Controls
+import Button
 
 Page{
     id: root
     required property var sqlModel
     required property var userName
     required property var qmlposition
+    required property var login
     background: Rectangle{
         z: -1
         color: "black"
     }
     header: ToolBar{
-
+        Rectangle{
+            border.width: 2
+            border.color: "#1A3328"
+            color: "#0A1A12"
+            radius: 10
+            height: 40
+            width: 100
+            Text {
+                id: name
+                text: qsTr("Sign Out")
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: "white"
+            }
+            MouseArea{
+                anchors.fill: parent
+                onClicked: {
+                    change.push("Main.qml")
+                }
+            }
+        }
     }
-
+    Login{
+        id: log2
+    }
     Column{
         anchors.rightMargin: 50
         anchors.right: cM.left
         id: cL
         Rectangle{
             Rectangle{
+                id: top
                 anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 radius: 10
                 color: "#00e5a0"
-                width: 76
+                width: parent.width - 4
                 height: 50
                 Rectangle{
-                    id: flat
                     anchors.bottom: parent.bottom
                     height:10
-                    width: 76
+                    width: parent.width
                     color: "#00e5a0"
                 }
             }
 
             color: "#0A1A12"
             border.width: 2
-            width: 80
+            width: 100
             border.color: "#1A3328"
             height: 500
             radius: 10
             Text {
+                id:userDisplay
                 text: userName
-                anchors.top: flat.bottom
+                anchors.top: top.bottom
                 anchors.topMargin: 5
                 color: "white"
             }
             Text {
-                text: "piss"
+                text: qmlposition
+                anchors.top: userDisplay.bottom
+                color: "white"
             }
         }
     }
@@ -127,6 +153,7 @@ Page{
                     color: "#1A3328"
                 }
                 Image {
+                    visible: log2.getlikes(login,model.postID)
                     source: "heart.png"
                     anchors.right: likes.left
                     anchors.rightMargin: 5
@@ -134,6 +161,7 @@ Page{
                     anchors.topMargin: 3
                     height: 10
                     width: 10
+
                     MouseArea{
                         onClicked: {}
                     }

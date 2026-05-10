@@ -13,8 +13,10 @@ class Login : public QObject
 public:
     explicit Login(QObject *parent = nullptr);
     Q_INVOKABLE void checkLogin(QString usr, QString pss);
+    Q_INVOKABLE bool getlikes(int accID,int postID);
 signals:
     void result(int res,QString position);
+    void liked(bool res);
 };
 
 #endif // LOGIN_H

@@ -13,23 +13,40 @@ Login::Login(QObject *parent)
 void Login::checkLogin(QString usr, QString pss)
 {
     QSqlQuery quer(data);
-    quer.prepare("select accID from accounts where username = :userIn and password = :passIn");
+    quer.prepare("select accID,position from accounts where username = :userIn and password = :passIn");
     quer.bindValue(":userIn",usr);
     quer.bindValue(":passIn",pss);
     if (quer.exec()){
-        qDebug() << "exec" << quer.isActive() << quer.isSelect();
         if(quer.next()){
-            int accID = quer.value("accID").toBool();
-            int position = quer.value("position").toString();
+            int accID = quer.value("accID").toInt();
+            QString position = quer.value("position").toString();
+            qDebug() << accID << " " << position;
             emit result(accID,position);
             return;
         }
         emit result(false,QString(""));
     }
 }
-/*
-void Login::getUserData(int accID){
-    QSqlQueryquer(data);
-    quer.prepare("select")
+
+bool Login::getlikes(int accID,int postID){
+    QSqlQuery quer(data);
+    quer.prepare("select liked from likes where accID=:accID and postID=:postID");
+    quer.bindValue(":accID",accID);
+    quer.bindValue(":postID",postID);
+    if (quer.exec()){
+        if (quer.next()){
+            qDebug() << "FOUND";
+            bool ans = quer.value("liked").toBool();
+            emit liked(ans);
+            return true;
+        }
+        else{
+            qDebug() << "NOT FOUND";
+            emit liked(false);
+            return false;
+        }
+    }
+    qDebug() << "ERROR";
+    return false;
 }
-*/
+

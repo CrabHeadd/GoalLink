@@ -16,15 +16,27 @@ Module {
         exportMetaObjectRevisions: [65024]
         Signal {
             name: "result"
-            lineNumber: 17
+            lineNumber: 18
             Parameter { name: "res"; type: "int" }
             Parameter { name: "position"; type: "QString" }
+        }
+        Signal {
+            name: "liked"
+            lineNumber: 19
+            Parameter { name: "res"; type: "bool" }
         }
         Method {
             name: "checkLogin"
             lineNumber: 15
             Parameter { name: "usr"; type: "QString" }
             Parameter { name: "pss"; type: "QString" }
+        }
+        Method {
+            name: "getlikes"
+            type: "bool"
+            lineNumber: 16
+            Parameter { name: "accID"; type: "int" }
+            Parameter { name: "postID"; type: "int" }
         }
     }
 }

@@ -23,10 +23,27 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 1,
+                        "index": 2,
                         "lineNumber": 15,
                         "name": "checkLogin",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "postID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 16,
+                        "name": "getlikes",
+                        "returnType": "bool"
                     }
                 ],
                 "object": true,
@@ -45,8 +62,21 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 17,
+                        "lineNumber": 18,
                         "name": "result",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "res",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 19,
+                        "name": "liked",
                         "returnType": "void"
                     }
                 ],

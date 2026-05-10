@@ -1,0 +1,15 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                    ],
+                    "filePath": "/Users/giovannigil/Button/login.qml"
+                }
+            ],
+            "moduleId": "Button(appButton)"
+        }
+    ]
+}

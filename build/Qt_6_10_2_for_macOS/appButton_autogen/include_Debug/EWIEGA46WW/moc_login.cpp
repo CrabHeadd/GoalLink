@@ -47,9 +47,13 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         "",
         "res",
         "position",
+        "liked",
         "checkLogin",
         "usr",
-        "pss"
+        "pss",
+        "getlikes",
+        "accID",
+        "postID"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -57,9 +61,17 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         QtMocHelpers::SignalData<void(int, QString)>(3, 4, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 5 }, { QMetaType::QString, 6 },
         }}),
+        // Signal 'liked'
+        QtMocHelpers::SignalData<void(bool)>(7, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Bool, 5 },
+        }}),
         // Method 'checkLogin'
-        QtMocHelpers::MethodData<void(QString, QString)>(7, 4, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 8 }, { QMetaType::QString, 9 },
+        QtMocHelpers::MethodData<void(QString, QString)>(8, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 9 }, { QMetaType::QString, 10 },
+        }}),
+        // Method 'getlikes'
+        QtMocHelpers::MethodData<bool(int, int)>(11, 4, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 12 }, { QMetaType::Int, 13 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -89,12 +101,17 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->result((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
-        case 1: _t->checkLogin((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 1: _t->liked((*reinterpret_cast<std::add_pointer_t<bool>>(_a[1]))); break;
+        case 2: _t->checkLogin((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 3: { bool _r = _t->getlikes((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (Login::*)(int , QString )>(_a, &Login::result, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Login::*)(bool )>(_a, &Login::liked, 1))
             return;
     }
 }
@@ -118,14 +135,14 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }
@@ -134,5 +151,11 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void Login::result(int _t1, QString _t2)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2);
+}
+
+// SIGNAL 1
+void Login::liked(bool _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
 }
 QT_WARNING_POP

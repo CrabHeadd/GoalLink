@@ -7,10 +7,42 @@
                     "entries": [
                         {
                             "codegenResult": 0,
+                            "column": 43,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 26,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 31,
+                            "message": "Cannot access value for name change"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 30,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 2000,
+                            "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 19,
+                            "line": 42,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 51,
                             "message": ""
                         },
                         {
@@ -18,7 +50,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 23,
+                            "line": 47,
                             "message": ""
                         },
                         {
@@ -26,7 +58,15 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 24,
+                            "line": 48,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 56,
                             "message": ""
                         },
                         {
@@ -34,7 +74,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 31,
+                            "line": 54,
                             "message": ""
                         },
                         {
@@ -42,7 +82,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 45,
+                            "line": 69,
                             "message": "Cannot access value for name userName"
                         },
                         {
@@ -50,7 +90,23 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 46,
+                            "line": 70,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 75,
+                            "message": "Cannot access value for name qmlposition"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 76,
                             "message": ""
                         },
                         {
@@ -58,7 +114,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 56,
+                            "line": 82,
                             "message": ""
                         },
                         {
@@ -66,7 +122,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 60,
+                            "line": 86,
                             "message": "Cannot retrieve a non-object type by ID: root"
                         },
                         {
@@ -74,7 +130,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 59,
+                            "line": 85,
                             "message": ""
                         },
                         {
@@ -82,7 +138,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 78,
+                            "line": 104,
                             "message": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant"
                         },
                         {
@@ -90,7 +146,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 71,
+                            "line": 97,
                             "message": ""
                         },
                         {
@@ -98,7 +154,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 73,
+                            "line": 99,
                             "message": ""
                         },
                         {
@@ -106,7 +162,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 80,
+                            "line": 106,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -114,7 +170,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 81,
+                            "line": 107,
                             "message": ""
                         },
                         {
@@ -122,7 +178,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 91,
+                            "line": 117,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -130,7 +186,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 87,
+                            "line": 113,
                             "message": ""
                         },
                         {
@@ -138,7 +194,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 89,
+                            "line": 115,
                             "message": ""
                         },
                         {
@@ -146,7 +202,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 95,
+                            "line": 121,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -154,7 +210,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 98,
+                            "line": 124,
                             "message": ""
                         },
                         {
@@ -162,7 +218,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 100,
+                            "line": 126,
                             "message": ""
                         },
                         {
@@ -170,71 +226,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 108,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 118,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 113,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 115,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 124,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 47,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 126,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "right",
-                            "line": 131,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 133,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 138,
+                            "line": 134,
                             "message": ""
                         },
                         {
@@ -250,7 +242,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 145,
+                            "line": 139,
                             "message": ""
                         },
                         {
@@ -258,7 +250,79 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 147,
+                            "line": 141,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 150,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 47,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 152,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 156,
+                            "message": "Cannot access value for name log2"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 158,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 160,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 166,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 172,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 173,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 175,
                             "message": ""
                         },
                         {
@@ -266,7 +330,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 159,
+                            "line": 187,
                             "message": ""
                         }
                     ],

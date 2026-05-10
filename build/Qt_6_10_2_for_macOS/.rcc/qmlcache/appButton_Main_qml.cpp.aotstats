@@ -8,33 +8,25 @@
                         {
                             "codegenResult": 2,
                             "column": 21,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 1000,
                             "functionName": "onLoginChanged",
-                            "line": 25,
+                            "line": 23,
                             "message": "Cannot retrieve a non-object type by ID: usernameField"
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onCompleted",
-                            "line": 11,
-                            "message": ""
-                        },
-                        {
                             "codegenResult": 2,
-                            "column": 18,
+                            "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "onResult",
-                            "line": 20,
-                            "message": "Cannot find name login"
+                            "line": 17,
+                            "message": "Cannot find name qmlposition"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 18,
+                            "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "onResult",
-                            "line": 20,
+                            "line": 17,
                             "message": ""
                         },
                         {
@@ -42,7 +34,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 40,
+                            "line": 39,
                             "message": ""
                         },
                         {
@@ -50,7 +42,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 42,
+                            "line": 41,
                             "message": ""
                         },
                         {
@@ -58,7 +50,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 51,
+                            "line": 50,
                             "message": ""
                         },
                         {
@@ -66,7 +58,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 72,
+                            "line": 71,
                             "message": ""
                         },
                         {
@@ -74,7 +66,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 81,
+                            "line": 80,
                             "message": ""
                         },
                         {
@@ -82,7 +74,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 86,
+                            "line": 85,
                             "message": ""
                         },
                         {
@@ -90,7 +82,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 97,
+                            "line": 96,
                             "message": ""
                         },
                         {
@@ -98,7 +90,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 99,
+                            "line": 98,
                             "message": ""
                         },
                         {
@@ -106,7 +98,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 107,
+                            "line": 106,
                             "message": ""
                         },
                         {
@@ -114,7 +106,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 109,
+                            "line": 108,
                             "message": ""
                         },
                         {
@@ -122,7 +114,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 117,
+                            "line": 116,
                             "message": ""
                         },
                         {
@@ -130,7 +122,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 119,
+                            "line": 118,
                             "message": ""
                         },
                         {
@@ -138,15 +130,15 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
+                            "line": 128,
+                            "message": "Could not find property \"horizontalCenter\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
                             "line": 129,
-                            "message": "Could not find property \"horizontalCenter\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 130,
                             "message": "Could not find property \"top\"."
                         },
                         {
@@ -154,7 +146,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 136,
+                            "line": 135,
                             "message": "Could not find property \"horizontalCenter\"."
                         },
                         {
@@ -162,7 +154,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 137,
+                            "line": 136,
                             "message": "Could not find property \"top\"."
                         },
                         {
@@ -170,7 +162,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 144,
+                            "line": 143,
                             "message": ""
                         },
                         {
@@ -178,7 +170,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 145,
+                            "line": 144,
                             "message": ""
                         },
                         {
@@ -186,7 +178,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 152,
+                            "line": 151,
                             "message": ""
                         },
                         {
@@ -194,7 +186,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 154,
+                            "line": 153,
                             "message": ""
                         },
                         {
@@ -202,7 +194,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 158,
+                            "line": 157,
                             "message": "Cannot retrieve a non-object type by ID: usernameField"
                         },
                         {
@@ -210,7 +202,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 157,
+                            "line": 156,
                             "message": ""
                         },
                         {
@@ -218,7 +210,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 168,
+                            "line": 167,
                             "message": "Cannot load property color from (component in /Users/giovannigil/Button/Main.qml)::parent with type QQuickItem."
                         },
                         {
@@ -226,7 +218,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 172,
+                            "line": 171,
                             "message": ""
                         },
                         {
@@ -234,7 +226,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 173,
+                            "line": 172,
                             "message": ""
                         },
                         {
@@ -242,7 +234,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 181,
+                            "line": 180,
                             "message": ""
                         },
                         {
@@ -250,7 +242,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 183,
+                            "line": 182,
                             "message": ""
                         },
                         {
@@ -258,7 +250,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 187,
+                            "line": 186,
                             "message": "Cannot retrieve a non-object type by ID: usernameField"
                         },
                         {
@@ -266,7 +258,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 186,
+                            "line": 185,
                             "message": ""
                         },
                         {
@@ -274,7 +266,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 194,
+                            "line": 193,
                             "message": "Cannot access value for name login"
                         },
                         {
@@ -282,7 +274,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 195,
+                            "line": 194,
                             "message": ""
                         },
                         {
@@ -290,7 +282,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 197,
+                            "line": 196,
                             "message": ""
                         },
                         {
@@ -298,7 +290,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 211,
+                            "line": 210,
                             "message": "Could not find property \"fill\"."
                         }
                     ],

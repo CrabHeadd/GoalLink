@@ -8,24 +8,23 @@ import Button
 Window {
     id: win
     required property var sqlModel
-    Component.onCompleted: {
-        console.log("MODEL:", win.sqlModel)
-    }
-    property bool login : false
+    property int login : 0
     property bool attempt : false
     property string userName: ""
     property string qmlposition: ""
     Login{
         id: log
-        onResult:(accID,position)=>{
-                   login = accID
-                     qmlposition = position
-               }
+        onResult: (accID, position) => {
+                qmlposition = position
+                login = accID
+                console.log("SIGNAL POSITION:", qmlposition,login)
+            }
     }
     onLoginChanged: {
-        if (login){
+        if (login != 0){
+            console.log("LOGINCHANGED POSITION:", qmlposition)
             userName = usernameField.text
-            change.push("Home.qml",{sqlModel:sqlModel,userName:userName,qmlposition:qmlposition})
+            change.push("Home.qml",{sqlModel:sqlModel,userName:userName,qmlposition:qmlposition,login:login})
         }
     }
 
@@ -148,7 +147,7 @@ Window {
                     height: 50
                     Text{
                         color: "#0A1A12"
-                        text: qsTr("REGISTER AS RECRUITER")
+                        text: qsTr("REGISTER AS PLAYER")
                         anchors.horizontalCenter: parent.horizontalCenter
                         font.family: "silom"
                         anchors.verticalCenter: parent.verticalCenter

@@ -21,6 +21,7 @@ qt_add_qml_module(appButton
     QML_FILES
         Main.qml
         Home.qml
+        login.qml
     RESOURCES
         "socc1.jpg"
         "logo.png"
