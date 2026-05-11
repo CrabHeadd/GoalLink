@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="redheart.png">/Users/giovannigil/Button/redheart.png</file>
+  </qresource>
+</RCC>
+

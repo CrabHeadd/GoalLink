@@ -36,14 +36,14 @@ bool Login::getlikes(int accID,int postID){
     quer.bindValue(":postID",postID);
     if (quer.exec()){
         if (quer.next()){
-            qDebug() << "FOUND";
             bool ans = quer.value("liked").toBool();
-            emit liked(ans);
-            return true;
+            return ans;
         }
         else{
-            qDebug() << "NOT FOUND";
-            emit liked(false);
+            quer.prepare("insert into likes(liked, accID, postID) values (0,:accID,:postID);");
+            quer.bindValue(":accID",accID);
+            quer.bindValue(":postID",postID);
+            quer.exec();
             return false;
         }
     }
@@ -72,4 +72,42 @@ void Login::addPost(int accID, QString text){
         }
     }
 
+}
+
+QString Login::getColor(int accID){
+    QString col = "black";
+    QSqlQuery quer(data);
+    quer.prepare("select color from accounts where accID ==:accID");
+    quer.bindValue(":accID",accID);
+    if(quer.exec()){
+        if (quer.next()){
+            col = quer.value("color").toString();
+            return col;
+        }
+    }
+}
+
+void Login::likeToggle(int accID,int postID){
+    if (getlikes(accID,postID)){
+        QSqlQuery quer(data);
+        quer.prepare("update likes set liked = false where accID == :accID and postID == :postID;");
+        quer.bindValue(":accID",accID);
+        quer.bindValue(":postID",postID);
+        quer.exec();
+
+        quer.prepare("update posts set likes = likes-1 where postID == :postID;");
+        quer.bindValue(":postID",postID);
+        quer.exec();
+    }
+    else{
+        QSqlQuery quer(data);
+        quer.prepare("update likes set liked = true where accID == :accID and postID == :postID;");
+        quer.bindValue(":accID",accID);
+        quer.bindValue(":postID",postID);
+        quer.exec();
+
+        quer.prepare("update posts set likes = likes+1 where postID == :postID;");
+        quer.bindValue(":postID",postID);
+        quer.exec();
+    }
 }

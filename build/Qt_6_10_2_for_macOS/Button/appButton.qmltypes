@@ -16,13 +16,13 @@ Module {
         exportMetaObjectRevisions: [65024]
         Signal {
             name: "result"
-            lineNumber: 20
+            lineNumber: 22
             Parameter { name: "res"; type: "int" }
             Parameter { name: "position"; type: "QString" }
         }
         Signal {
             name: "liked"
-            lineNumber: 21
+            lineNumber: 23
             Parameter { name: "res"; type: "bool" }
         }
         Method {
@@ -43,6 +43,18 @@ Module {
             lineNumber: 18
             Parameter { name: "accID"; type: "int" }
             Parameter { name: "text"; type: "QString" }
+        }
+        Method {
+            name: "getColor"
+            type: "QString"
+            lineNumber: 19
+            Parameter { name: "accID"; type: "int" }
+        }
+        Method {
+            name: "likeToggle"
+            lineNumber: 20
+            Parameter { name: "accID"; type: "int" }
+            Parameter { name: "postID"; type: "int" }
         }
     }
 }

@@ -55,29 +55,29 @@ Page{
     }
     TextArea{
         id: newPost
-        width: 50
-        height: 10
-        z: 10
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 20
+        width: 100
+        height: 20
+        anchors.bottom: cM.top
+        anchors.bottomMargin: 10
+        anchors.horizontalCenter: parent.horizontalCenter
     }
     Button{
         onClicked: {
             log2.addPost(login,newPost.text)
-            root.sqlModel.select()
-
+            root.sqlModel.updateMod()
         }
-        z: 10
         width: 50
         height: 10
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 10
+        anchors.bottom: newPost.top
+        anchors.bottomMargin: -5
+        anchors.right: newPost.left
     }
 
     Column{
+        anchors.top: parent.top
+        anchors.topMargin: 60
         anchors.rightMargin: 50
         anchors.right: cM.left
-        anchors.top: bar.bottom
         id: cL
         Rectangle{
             Rectangle{
@@ -95,33 +95,57 @@ Page{
                     color: "#00e5a0"
                 }
             }
-
+            Rectangle{
+                id:curProf
+                anchors.top: top.top
+                anchors.topMargin: top.height - 20
+                anchors.left: parent.left
+                anchors.leftMargin: 10
+                radius: 40
+                height: 40
+                width: 40
+                color: log2.getColor(login)
+                Text {
+                    text: userName[0]
+                    anchors.centerIn: parent
+                    color: "white"
+                }
+            }
             color: "#0A1A12"
             border.width: 2
-            width: 100
+            width: 150
             border.color: "#1A3328"
-            height: 500
+            height: 300
             radius: 10
             Text {
                 id:userDisplay
                 text: userName
-                anchors.top: top.bottom
-                anchors.topMargin: 5
+                anchors.top: curProf.bottom
+                anchors.topMargin: 10
                 color: "white"
+                font.family: "silom"
+                anchors.left: parent.left
+                anchors.leftMargin: 10
             }
             Text {
                 text: qmlposition
                 anchors.top: userDisplay.bottom
-                color: "white"
+                color: "gray"
+                font.family: "silom"
+                font.pixelSize: 10
+                anchors.left: parent.left
+                anchors.leftMargin: 10
             }
         }
     }
     Column{
-        anchors.centerIn: parent
+        anchors.top: parent.top
+        anchors.topMargin: 100
+        anchors.horizontalCenter: parent.horizontalCenter
         id: cM
-        anchors.top: bar
-        Repeater {
-            anchors.fill: parent
+        ListView {
+            width: 200
+            height: 5000
             model: root.sqlModel
 
             delegate: Rectangle {
@@ -140,7 +164,7 @@ Page{
                     radius: 40
                     height: 40
                     width: 40
-                    color: Qt.rgba(Math.random(),Math.random(),Math.random(),1);
+                    color: model.color
                     Text {
                         text: model.letter
                         anchors.centerIn: parent
@@ -184,7 +208,7 @@ Page{
                 }
                 Rectangle{
                     id: divider
-                    width: 70
+                    width: 80
                     height: 1
                     anchors.top: description.bottom
                     anchors.topMargin: 5
@@ -192,8 +216,7 @@ Page{
                     color: "#1A3328"
                 }
                 Image {
-                    visible: log2.getlikes(login,model.postID)
-                    source: "heart.png"
+                    source: (log2.getlikes(login,model.postID)) ? "qrc:/qt/qml/Button/redheart.png" : "qrc:/qt/qml/Button/heart.png"
                     anchors.right: likes.left
                     anchors.rightMargin: 5
                     anchors.top: likes.top
@@ -202,7 +225,10 @@ Page{
                     width: 10
 
                     MouseArea{
-                        onClicked: {}
+                        anchors.fill: parent
+                        onClicked: {log2.likeToggle(login,model.postID)
+                                    root.sqlModel.updateMod()
+                        }
                     }
                 }
                 Text {
@@ -221,8 +247,9 @@ Page{
         }
     }
     Column{
-        anchors.top: bar
         id: cR
+        anchors.top: parent.top
+        anchors.topMargin: 60
         anchors.leftMargin: 50
         anchors.left: cM.right
         Rectangle{

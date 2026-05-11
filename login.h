@@ -16,6 +16,8 @@ public:
     Q_INVOKABLE void checkLogin(QString usr, QString pss);
     Q_INVOKABLE bool getlikes(int accID,int postID);
     Q_INVOKABLE void addPost(int accID, QString text);
+    Q_INVOKABLE QString getColor(int accID);
+    Q_INVOKABLE void likeToggle(int accID,int postID);
 signals:
     void result(int res,QString position);
     void liked(bool res);

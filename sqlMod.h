@@ -3,7 +3,6 @@
 #include <QSqlTableModel>
 #include <QSqlRelationalTableModel>
 #include <QHash>
-#endif // SQLMOD_H
 
 
 class sqlMod : public QSqlRelationalTableModel {
@@ -12,5 +11,7 @@ public:
     explicit sqlMod(QObject *parent = nullptr,QSqlDatabase db = QSqlDatabase());
     QHash<int,QByteArray> roleNames() const override;
     QVariant data(const QModelIndex &index, int role) const override;
+    Q_INVOKABLE void updateMod();
 };
 
+#endif // SQLMOD_H

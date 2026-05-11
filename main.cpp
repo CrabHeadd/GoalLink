@@ -28,10 +28,10 @@ int main(int argc, char *argv[])
     //QString path = QDir::currentPath() + "";
     //QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db";
     QSqlDatabase Db = QSqlDatabase::addDatabase("QSQLITE");
-    QString path = QCoreApplication::applicationDirPath() + "/goalLink.db";
-    Db.setDatabaseName(path);
+    //QString path = QCoreApplication::applicationDirPath() + "/goalLink.db";
+    Db.setDatabaseName("/Users/giovannigil/Button/goalLink.db");
     if (!Db.open()) {
-        qDebug() << "INVALID DATABASE " << path;
+        qDebug() << "INVALID DATABASE ";
         return -1;
     }
     qDebug() << "Path:" << Db.databaseName();

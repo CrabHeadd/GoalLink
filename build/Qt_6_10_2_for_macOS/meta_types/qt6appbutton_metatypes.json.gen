@@ -61,6 +61,36 @@
                         "lineNumber": 18,
                         "name": "addPost",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 19,
+                        "name": "getColor",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "postID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 20,
+                        "name": "likeToggle",
+                        "returnType": "void"
                     }
                 ],
                 "object": true,
@@ -79,7 +109,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 20,
+                        "lineNumber": 22,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -92,7 +122,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 21,
+                        "lineNumber": 23,
                         "name": "liked",
                         "returnType": "void"
                     }
@@ -112,7 +142,16 @@
         "classes": [
             {
                 "className": "sqlMod",
-                "lineNumber": 9,
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 14,
+                        "name": "updateMod",
+                        "returnType": "void"
+                    }
+                ],
                 "object": true,
                 "qualifiedClassName": "sqlMod",
                 "superClasses": [

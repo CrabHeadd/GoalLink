@@ -4,6 +4,7 @@
     <file alias="logo.png">/Users/giovannigil/Button/logo.png</file>
     <file alias="goalLink.db">/Users/giovannigil/Button/goalLink.db</file>
     <file alias="heart.png">/Users/giovannigil/Button/heart.png</file>
+    <file alias="redheart.png">/Users/giovannigil/Button/redheart.png</file>
   </qresource>
 </RCC>
 

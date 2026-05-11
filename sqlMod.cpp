@@ -12,6 +12,7 @@ QHash<int, QByteArray> sqlMod::roleNames() const
     roles[Qt::UserRole+6] = QByteArray("username");
     roles[Qt::UserRole+8] = QByteArray("isRecruiter");
     roles[Qt::UserRole+9] = QByteArray("position");
+    roles[Qt::UserRole+10] = QByteArray("color");
     return roles;
 }
 
@@ -39,4 +40,15 @@ QVariant sqlMod::data(const QModelIndex &index, int role) const
     QModelIndex modelIndex = this->index(index.row(), column);
 
     return QSqlTableModel::data(modelIndex, Qt::DisplayRole);
+}
+
+void sqlMod::updateMod(){
+    this->beginResetModel();
+    this->setQuery("select * from posts join accounts on posts.accID == accounts.accID;");
+    this->setEditStrategy(QSqlTableModel::OnFieldChange);
+    this->setRelation(3,QSqlRelation("accounts","accID","username"));
+    if(this->select()){
+        qDebug() << "piss";
+    }
+    this->endResetModel();
 }
