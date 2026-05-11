@@ -157,6 +157,7 @@ Page{
                     }
                 }
                 Rectangle{
+                    id: recSignIn
                     color: parent.color
                     radius: 7
                     border.color: "#00e5a0"
@@ -186,8 +187,8 @@ Page{
                     text: "Sign Up"
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.rightMargin: 35
-                    anchors.bottom: parent.bottom
-                    anchors.bottomMargin: 5
+                    anchors.top: recSignIn.bottom
+                    anchors.topMargin: 5
                     MouseArea{
                         anchors.fill: parent
                         onClicked: {
@@ -215,8 +216,52 @@ Page{
         visible: viz
         anchors.centerIn: parent
         closePolicy: Popup.NoAutoClose
+        width: 250
+        height: 200
         Text {
-            text: "piss"
+            text: "Fill out the following fields:"
+            id: topTxt
+        }
+        Text {
+            id: txt1
+            anchors.left: parent.Left
+            anchors.top: topTxt.bottom
+            anchors.topMargin: 10
+            text: "Username: "
+        }
+        TextArea{
+            id: t1
+            anchors.left: txt1.right
+            anchors.top: txt1.top
+            width: 80
+        }
+        Text {
+            id: txt2
+            anchors.left: parent.Left
+            anchors.top: txt1.bottom
+            anchors.topMargin: 10
+            text: "Password: "
+        }
+        TextArea{
+            id: t2
+            anchors.left: txt2.right
+            anchors.top: txt2.top
+            width: 80
+        }
+        Text {
+            id: txt3
+            anchors.left: parent.Left
+            anchors.top: txt2.bottom
+            anchors.topMargin: 10
+            text: "SECURITY QUESTION
+ Mother's maiden name: "
+        }
+        TextArea{
+            id: t3
+            anchors.left: txt3.right
+            anchors.top: txt3.top
+            anchors.topMargin: 8
+            width: 80
         }
     }
 }

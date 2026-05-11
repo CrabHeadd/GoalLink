@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 21,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 1000,
                             "functionName": "onLoginChanged",
                             "line": 23,
                             "message": "Cannot retrieve a non-object type by ID: usernameField"
@@ -210,7 +210,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 160,
+                            "line": 161,
                             "message": "Cannot load property color from (component in /Users/giovannigil/Button/login.qml)::parent with type QQuickItem."
                         },
                         {
@@ -218,7 +218,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 164,
+                            "line": 165,
                             "message": ""
                         },
                         {
@@ -226,7 +226,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 165,
+                            "line": 166,
                             "message": ""
                         },
                         {
@@ -234,7 +234,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 173,
+                            "line": 174,
                             "message": ""
                         },
                         {
@@ -242,7 +242,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 175,
+                            "line": 176,
                             "message": ""
                         },
                         {
@@ -250,7 +250,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 179,
+                            "line": 180,
                             "message": "Cannot retrieve a non-object type by ID: usernameField"
                         },
                         {
@@ -258,7 +258,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 178,
+                            "line": 179,
                             "message": ""
                         },
                         {
@@ -266,15 +266,15 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 187,
+                            "line": 188,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 37,
+                            "column": 34,
                             "durationMicroseconds": 0,
-                            "functionName": "bottom",
-                            "line": 189,
+                            "functionName": "top",
+                            "line": 190,
                             "message": ""
                         },
                         {
@@ -282,7 +282,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 193,
+                            "line": 194,
                             "message": "Cannot find name viz"
                         },
                         {
@@ -290,7 +290,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 192,
+                            "line": 193,
                             "message": ""
                         },
                         {
@@ -298,7 +298,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 199,
+                            "line": 200,
                             "message": "Cannot access value for name login"
                         },
                         {
@@ -306,7 +306,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 200,
+                            "line": 201,
                             "message": ""
                         },
                         {
@@ -314,7 +314,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 202,
+                            "line": 203,
                             "message": ""
                         },
                         {
@@ -322,7 +322,7 @@
                             "column": 18,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 215,
+                            "line": 216,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -330,7 +330,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "closePolicy",
-                            "line": 217,
+                            "line": 218,
                             "message": "Could not find property \"closePolicy\"."
                         },
                         {
@@ -338,8 +338,104 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 216,
+                            "line": 217,
                             "message": "Could not find property \"centerIn\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 227,
+                            "message": "Cannot load property Left from (component in /Users/giovannigil/Button/login.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 228,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 234,
+                            "message": "Could not find property \"left\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 235,
+                            "message": "Could not find property \"top\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 240,
+                            "message": "Cannot load property Left from (component in /Users/giovannigil/Button/login.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 241,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 247,
+                            "message": "Could not find property \"left\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 248,
+                            "message": "Could not find property \"top\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 253,
+                            "message": "Cannot load property Left from (component in /Users/giovannigil/Button/login.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 254,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 261,
+                            "message": "Could not find property \"left\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 262,
+                            "message": "Could not find property \"top\"."
                         }
                     ],
                     "filePath": "/Users/giovannigil/Button/login.qml"
