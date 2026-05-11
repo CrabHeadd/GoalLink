@@ -11,12 +11,13 @@ Login::Login(QObject *parent)
     }
 }
 
-void Login::checkLogin(QString usr, QString pss)
+void Login::checkLogin(QString usr, QString pss, bool isRec)
 {
     QSqlQuery quer(data);
-    quer.prepare("select accID,position from accounts where username = :userIn and password = :passIn");
+    quer.prepare("select accID,position from accounts where username = :userIn and password = :passIn and isRecruiter == :isRec;");
     quer.bindValue(":userIn",usr);
     quer.bindValue(":passIn",pss);
+    quer.bindValue(":isRec",isRec);
     if (quer.exec()){
         if(quer.next()){
             int accID = quer.value("accID").toInt();
@@ -85,6 +86,14 @@ QString Login::getColor(int accID){
             return col;
         }
     }
+}
+
+void Login::setColor(int accID, QString col){
+    QSqlQuery quer(data);
+    quer.prepare("update accounts set color = :col where accID == :accID;");
+    quer.bindValue(":accID",accID);
+    quer.bindValue(":col",col);
+    quer.exec();
 }
 
 void Login::likeToggle(int accID,int postID){

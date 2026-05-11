@@ -11,6 +11,7 @@ Page{
     property bool attempt : false
     property string userName: ""
     property string qmlposition: ""
+    property bool viz: false
     Login{
         id: log
         onResult: (accID, position) => {
@@ -147,7 +148,7 @@ Page{
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            log.checkLogin(usernameField.text,passwordField.text)
+                            log.checkLogin(usernameField.text,passwordField.text,0)
                             attempt=true
 //                            change.push("Home.qml",{
 //                                            sqlModel: sqlModel
@@ -176,8 +177,21 @@ Page{
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            log.checkLogin(usernameField.text,passwordField.text)
+                            log.checkLogin(usernameField.text,passwordField.text,1)
                             attempt=true
+                        }
+                    }
+                }
+                Text {
+                    text: "Sign Up"
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.rightMargin: 35
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: 5
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked: {
+                            viz = true
                         }
                     }
                 }
@@ -186,7 +200,7 @@ Page{
                     anchors.right: parent.horizontalCenter
                     anchors.rightMargin: 35
                     anchors.bottom: parent.bottom
-                    anchors.bottomMargin: 10
+                    anchors.bottomMargin: 5
 
                     Text {
                         text: "invalid login"
@@ -196,5 +210,13 @@ Page{
 
         }
             }
+    }
+    Popup{
+        visible: viz
+        anchors.centerIn: parent
+        closePolicy: Popup.NoAutoClose
+        Text {
+            text: "piss"
+        }
     }
 }

@@ -6,35 +6,43 @@
                 {
                     "entries": [
                         {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 1000,
+                            "functionName": "profColor",
+                            "line": 12,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "onProfColorChanged",
+                            "line": 14,
+                            "message": "Cannot generate efficient code for incomparable types QString and (component in /Users/giovannigil/Button/Home.qml)::profColor with type QVariant (adjusted to QVariant)"
+                        },
+                        {
                             "codegenResult": 2,
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 23,
+                            "line": 35,
                             "message": "Cannot access value for name root"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 26,
+                            "column": 41,
                             "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 29,
+                            "functionName": "verticalCenter",
+                            "line": 40,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 28,
+                            "column": 31,
                             "durationMicroseconds": 0,
-                            "functionName": "right",
-                            "line": 31,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 41,
+                            "functionName": "left",
+                            "line": 45,
                             "message": ""
                         },
                         {
@@ -42,367 +50,31 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 42,
+                            "line": 48,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 31,
                             "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 47,
-                            "message": "Cannot access value for name change"
+                            "functionName": "left",
+                            "line": 51,
+                            "message": "Cannot access value for name logoImage"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 31,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 46,
+                            "functionName": "top",
+                            "line": 56,
                             "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "bottom",
-                            "line": 60,
-                            "message": "Could not find property \"bottom\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 62,
-                            "message": "Could not find property \"horizontalCenter\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 65,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "bottom",
-                            "line": 71,
-                            "message": "Could not find property \"bottom\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 24,
+                            "codegenResult": 0,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 73,
-                            "message": "Could not find property \"right\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 22,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 77,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "right",
-                            "line": 80,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 89,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 85,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 86,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 94,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 37,
-                            "durationMicroseconds": 0,
-                            "functionName": "bottom",
-                            "line": 92,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 107,
-                            "message": "Cannot access value for name login"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 100,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "topMargin",
-                            "line": 101,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 102,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 109,
-                            "message": "Cannot access value for name userName"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 110,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 122,
-                            "message": "Cannot access value for name userName"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 123,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 127,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 131,
-                            "message": "Cannot access value for name qmlposition"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 132,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 136,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 22,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 142,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 144,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "model",
-                            "line": 149,
-                            "message": "Cannot retrieve a non-object type by ID: root"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 167,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 160,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 162,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 169,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 170,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 180,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 176,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 178,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 184,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 187,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 33,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 189,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 197,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 207,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 202,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 204,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 213,
+                            "line": 58,
                             "message": ""
                         },
                         {
@@ -410,47 +82,175 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 215,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "source",
-                            "line": 219,
-                            "message": "Cannot access value for name log2"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "right",
-                            "line": 220,
+                            "line": 68,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 34,
+                            "column": 45,
                             "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 222,
+                            "functionName": "verticalCenter",
+                            "line": 69,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 36,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 229,
-                            "message": "Cannot access value for name log2"
+                            "line": 74,
+                            "message": "Cannot access value for name change"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 39,
+                            "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 228,
+                            "line": 73,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 88,
+                            "message": "Could not find property \"bottom\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 90,
+                            "message": "Could not find property \"horizontalCenter\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 98,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 95,
+                            "message": "Cannot generate efficient code for populating QColor from "
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 96,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 104,
+                            "message": "Could not find property \"bottom\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 106,
+                            "message": "Could not find property \"right\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 110,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 113,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 122,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 118,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 43,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 119,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 127,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 125,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 140,
+                            "message": "Cannot access value for name profColor"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 133,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "topMargin",
+                            "line": 134,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 135,
                             "message": ""
                         },
                         {
@@ -458,23 +258,71 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 237,
-                            "message": "Cannot access value for name model"
+                            "line": 142,
+                            "message": "Cannot access value for name userName"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 144,
+                            "message": "Cannot access value for name letCol"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 34,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 143,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 155,
+                            "message": "Cannot access value for name userName"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 238,
+                            "line": 156,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 35,
+                            "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 240,
+                            "line": 160,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 164,
+                            "message": "Cannot access value for name qmlposition"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 165,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 169,
                             "message": ""
                         },
                         {
@@ -482,7 +330,231 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 251,
+                            "line": 175,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 177,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 182,
+                            "message": "Cannot retrieve a non-object type by ID: root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 200,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 193,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 195,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 202,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 43,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 203,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 213,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 209,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 211,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 217,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 220,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 33,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 222,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 43,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 230,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 240,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 235,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 237,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 246,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 47,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 248,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "source",
+                            "line": 252,
+                            "message": "Cannot access value for name log2"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 253,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 255,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 262,
+                            "message": "Cannot access value for name log2"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 261,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 270,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 271,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 273,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 284,
                             "message": ""
                         },
                         {
@@ -490,7 +562,135 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 254,
+                            "line": 287,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 301,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 303,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 307,
+                            "message": "Cannot access value for name login"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 306,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 320,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 322,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 326,
+                            "message": "Cannot access value for name login"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 325,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 339,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 340,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 344,
+                            "message": "Cannot access value for name login"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 343,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "left",
+                            "line": 357,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 358,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 362,
+                            "message": "Cannot access value for name login"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 361,
                             "message": ""
                         }
                     ],

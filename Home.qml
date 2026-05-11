@@ -8,6 +8,18 @@ Page{
     required property var userName
     required property var qmlposition
     required property var login
+
+    property var profColor: log2.getColor(login)
+    property var letCol: "black"
+    onProfColorChanged:{
+        if (profColor == "#ffffff") {
+            letCol = "#000000"
+        }
+        else{
+            letCol = "#ffffff"
+        }
+    }
+
     background: Rectangle{
         z: -1
         color: "black"
@@ -23,29 +35,45 @@ Page{
             width: root.width
             height: 50
 
-        }
 
-        Rectangle{
-            anchors.top: parent.top
-            anchors.topMargin: 2
-            anchors.right: parent.right
-            border.width: 2
-            border.color: "#1A3328"
-            color: "#0A1A12"
-            radius: 10
-            height: 40
-            width: 100
-            Text {
-                id: name
-                text: qsTr("Sign Out")
-                anchors.horizontalCenter: parent.horizontalCenter
+            Image {
                 anchors.verticalCenter: parent.verticalCenter
-                color: "white"
+                id: logoImage
+                source: "logo.png"
+                height: 20
+                width: 20
+                anchors.left: parent.left
             }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {
-                    change.push("login.qml")
+            Text {
+                anchors.verticalCenter: parent.verticalCenter
+                font.family: "silom"
+                font.pixelSize: 18
+                anchors.left: logoImage.right
+                anchors.leftMargin: 3
+                text: qsTr("FieldLink")
+            }
+            Rectangle{
+                anchors.top: parent.top
+                anchors.topMargin: 2
+                anchors.right: parent.right
+                border.width: 2
+                border.color: "#1A3328"
+                color: "#0A1A12"
+                radius: 10
+                height: 40
+                width: 100
+                Text {
+                    id: name
+                    text: qsTr("Sign Out")
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    color: "white"
+                }
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        change.push("login.qml")
+                    }
                 }
             }
         }
@@ -62,6 +90,11 @@ Page{
         anchors.horizontalCenter: parent.horizontalCenter
     }
     Button{
+        Text {
+            text: "submit"
+            color: white
+            anchors.centerIn: parent
+        }
         onClicked: {
             log2.addPost(login,newPost.text)
             root.sqlModel.updateMod()
@@ -104,11 +137,11 @@ Page{
                 radius: 40
                 height: 40
                 width: 40
-                color: log2.getColor(login)
+                color: profColor
                 Text {
                     text: userName[0]
                     anchors.centerIn: parent
-                    color: "white"
+                    color: letCol
                 }
             }
             color: "#0A1A12"
@@ -254,11 +287,85 @@ Page{
         anchors.left: cM.right
         Rectangle{
             border.color: "#1A3328"
-            width: 80
+            width: 120
             border.width: 2
-            height: 500
+            height: 250
             color: "#0A1A12"
             radius: 10
+            Rectangle{
+                id: black
+                radius: 40
+                height: 40
+                width: 40
+                color: "black"
+                anchors.left: parent.left
+                anchors.leftMargin:  10
+                anchors.top: parent.top
+                anchors.topMargin: 10
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        log2.setColor(login,parent.color)
+                        profColor = log2.getColor(login)
+                        root.sqlModel.updateMod()
+                    }
+                }
+            }
+            Rectangle{
+                id: white
+                radius: 40
+                height: 40
+                width: 40
+                color: "white"
+                anchors.right: parent.right
+                anchors.rightMargin: 10
+                anchors.top: parent.top
+                anchors.topMargin: 10
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        log2.setColor(login,parent.color)
+                        profColor = log2.getColor(login)
+                        root.sqlModel.updateMod()
+                    }
+                }
+            }
+            Rectangle{
+                id: blue
+                radius: 40
+                height: 40
+                width: 40
+                color: "blue"
+                anchors.right: white.right
+                anchors.top: white.bottom
+                anchors.topMargin: 10
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        log2.setColor(login,parent.color)
+                        profColor = log2.getColor(login)
+                        root.sqlModel.updateMod()
+                    }
+                }
+            }
+            Rectangle{
+                id: red
+                radius: 40
+                height: 40
+                width: 40
+                color: "red"
+                anchors.left: black.left
+                anchors.top: black.bottom
+                anchors.topMargin: 10
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        log2.setColor(login,parent.color)
+                        profColor = log2.getColor(login)
+                        root.sqlModel.updateMod()
+                    }
+                }
+            }
         }
     }
 }

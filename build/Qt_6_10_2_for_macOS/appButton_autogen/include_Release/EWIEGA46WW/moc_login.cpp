@@ -51,13 +51,16 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         "checkLogin",
         "usr",
         "pss",
+        "isRec",
         "getlikes",
         "accID",
         "postID",
         "addPost",
         "text",
         "getColor",
-        "likeToggle"
+        "likeToggle",
+        "setColor",
+        "col"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -70,24 +73,28 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
             { QMetaType::Bool, 5 },
         }}),
         // Method 'checkLogin'
-        QtMocHelpers::MethodData<void(QString, QString)>(8, 4, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 9 }, { QMetaType::QString, 10 },
+        QtMocHelpers::MethodData<void(QString, QString, bool)>(8, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 9 }, { QMetaType::QString, 10 }, { QMetaType::Bool, 11 },
         }}),
         // Method 'getlikes'
-        QtMocHelpers::MethodData<bool(int, int)>(11, 4, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 12 }, { QMetaType::Int, 13 },
+        QtMocHelpers::MethodData<bool(int, int)>(12, 4, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 13 }, { QMetaType::Int, 14 },
         }}),
         // Method 'addPost'
-        QtMocHelpers::MethodData<void(int, QString)>(14, 4, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 12 }, { QMetaType::QString, 15 },
+        QtMocHelpers::MethodData<void(int, QString)>(15, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 13 }, { QMetaType::QString, 16 },
         }}),
         // Method 'getColor'
-        QtMocHelpers::MethodData<QString(int)>(16, 4, QMC::AccessPublic, QMetaType::QString, {{
-            { QMetaType::Int, 12 },
+        QtMocHelpers::MethodData<QString(int)>(17, 4, QMC::AccessPublic, QMetaType::QString, {{
+            { QMetaType::Int, 13 },
         }}),
         // Method 'likeToggle'
-        QtMocHelpers::MethodData<void(int, int)>(17, 4, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 12 }, { QMetaType::Int, 13 },
+        QtMocHelpers::MethodData<void(int, int)>(18, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 13 }, { QMetaType::Int, 14 },
+        }}),
+        // Method 'setColor'
+        QtMocHelpers::MethodData<void(int, QString)>(19, 4, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 13 }, { QMetaType::QString, 20 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -118,13 +125,14 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         switch (_id) {
         case 0: _t->result((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         case 1: _t->liked((*reinterpret_cast<std::add_pointer_t<bool>>(_a[1]))); break;
-        case 2: _t->checkLogin((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 2: _t->checkLogin((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[3]))); break;
         case 3: { bool _r = _t->getlikes((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         case 4: _t->addPost((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         case 5: { QString _r = _t->getColor((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
         case 6: _t->likeToggle((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
+        case 7: _t->setColor((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
@@ -155,14 +163,14 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }

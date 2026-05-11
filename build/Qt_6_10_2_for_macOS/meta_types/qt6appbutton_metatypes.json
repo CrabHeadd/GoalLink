@@ -21,6 +21,10 @@
                             {
                                 "name": "pss",
                                 "type": "QString"
+                            },
+                            {
+                                "name": "isRec",
+                                "type": "bool"
                             }
                         ],
                         "index": 2,
@@ -91,6 +95,23 @@
                         "lineNumber": 20,
                         "name": "likeToggle",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "col",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 21,
+                        "name": "setColor",
+                        "returnType": "void"
                     }
                 ],
                 "object": true,
@@ -109,7 +130,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 22,
+                        "lineNumber": 23,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -122,7 +143,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 23,
+                        "lineNumber": 24,
                         "name": "liked",
                         "returnType": "void"
                     }
