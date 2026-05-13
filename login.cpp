@@ -5,7 +5,7 @@
 Login::Login(QObject *parent)
     : QObject{parent}
 {   data = QSqlDatabase::addDatabase("QSQLITE");
-    data.setDatabaseName("/Users/giovannigil/Button/goalLink.db");
+    data.setDatabaseName(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db");
     if(data.open()){
         qDebug() << "great";
     }
@@ -152,4 +152,29 @@ bool Login::addAcc(QString usr, QString pass,QString sec,bool isRec, QString pos
             }
         }
     }
+}
+
+int Login::getAccID(QString usr){
+    QSqlQuery quer(data);
+    quer.prepare("select accID from accounts where username = :usr");
+    quer.bindValue(":usr",usr);
+    if (quer.exec()){
+        if(quer.next()){
+            int accID = quer.value("accID").toInt();
+            return accID;
+        }
+    }
+}
+void Login::deleteAcc(QString usr){
+    int ID, accID;
+    accID = getAccID(usr);
+    QSqlQuery quer(data);
+
+    quer.prepare("delete from posts where accID = :accID;");
+    quer.bindValue(":accID",accID);
+    quer.exec();
+
+    quer.prepare("delete from accounts where username = :usr;");
+    quer.bindValue(":usr",usr);
+    quer.exec();
 }

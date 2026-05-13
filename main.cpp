@@ -25,11 +25,19 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
 
 
+    //
+    QString dataPathDir =QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir().mkpath(dataPathDir);
+    QString dataPath = dataPathDir + "/goalLink.db";
+    if (!QFile::exists(dataPath)) {
+        QFile::copy(":/qt/qml/Button/goalLink.db", dataPath);
+    }
+    //
     //QString path = QDir::currentPath() + "";
     //QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db";
     QSqlDatabase Db = QSqlDatabase::addDatabase("QSQLITE");
     //QString path = QCoreApplication::applicationDirPath() + "/goalLink.db";
-    Db.setDatabaseName("/Users/giovannigil/Button/goalLink.db");
+    Db.setDatabaseName(dataPath);
     if (!Db.open()) {
         qDebug() << "INVALID DATABASE ";
         return -1;

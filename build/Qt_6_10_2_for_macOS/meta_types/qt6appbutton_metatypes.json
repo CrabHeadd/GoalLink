@@ -141,6 +141,19 @@
                         "lineNumber": 22,
                         "name": "addAcc",
                         "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 23,
+                        "name": "deleteAcc",
+                        "returnType": "void"
                     }
                 ],
                 "object": true,
@@ -159,7 +172,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 24,
+                        "lineNumber": 27,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -172,7 +185,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 25,
+                        "lineNumber": 28,
                         "name": "liked",
                         "returnType": "void"
                     }

@@ -144,7 +144,7 @@ Page{
             border.width: 2
             width: 150
             border.color: "#1A3328"
-            height: 300
+            height: 250
             radius: 10
             Text {
                 id:userDisplay
@@ -164,6 +164,31 @@ Page{
                 font.pixelSize: 10
                 anchors.left: parent.left
                 anchors.leftMargin: 10
+            }
+            Rectangle{
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 10
+                border.width: 2
+                border.color: "#1A3328"
+                color: "#0A1A12"
+                width: 100
+                height: 30
+                radius: 10
+                Text {
+                    text: "Delete Account"
+                    anchors.centerIn: parent
+                    color: "white"
+
+                }
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        log2.deleteAcc(userName)
+                        root.sqlModel.updateMod()
+                        change.push("login.qml")
+                    }
+                }
             }
         }
     }
