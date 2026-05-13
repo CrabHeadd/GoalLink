@@ -112,6 +112,35 @@
                         "lineNumber": 21,
                         "name": "setColor",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pass",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "sec",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "isRec",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "pos",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 23,
+                        "name": "addAcc",
+                        "returnType": "QString"
                     }
                 ],
                 "object": true,
@@ -130,7 +159,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 23,
+                        "lineNumber": 25,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -143,7 +172,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 24,
+                        "lineNumber": 26,
                         "name": "liked",
                         "returnType": "void"
                     }

@@ -182,6 +182,17 @@ Page{
             model: root.sqlModel
 
             delegate: Rectangle {
+                property string col: "#000000"
+                property var modCol: model.color
+                Component.onCompleted: {
+                    if (model.color == "#ffffff"){
+                        col = "#000000"
+                    }
+                    else{
+                        col = "#ffffff"
+                    }
+                }
+
                 id: rec
                 height: 150
                 width: 200
@@ -201,7 +212,7 @@ Page{
                     Text {
                         text: model.letter
                         anchors.centerIn: parent
-                        color: "white"
+                        color: col
                     }
                 }
                 Text {

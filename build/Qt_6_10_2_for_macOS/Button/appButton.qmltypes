@@ -16,13 +16,13 @@ Module {
         exportMetaObjectRevisions: [65024]
         Signal {
             name: "result"
-            lineNumber: 23
+            lineNumber: 25
             Parameter { name: "res"; type: "int" }
             Parameter { name: "position"; type: "QString" }
         }
         Signal {
             name: "liked"
-            lineNumber: 24
+            lineNumber: 26
             Parameter { name: "res"; type: "bool" }
         }
         Method {
@@ -62,6 +62,16 @@ Module {
             lineNumber: 21
             Parameter { name: "accID"; type: "int" }
             Parameter { name: "col"; type: "QString" }
+        }
+        Method {
+            name: "addAcc"
+            type: "QString"
+            lineNumber: 23
+            Parameter { name: "usr"; type: "QString" }
+            Parameter { name: "pass"; type: "QString" }
+            Parameter { name: "sec"; type: "QString" }
+            Parameter { name: "isRec"; type: "bool" }
+            Parameter { name: "pos"; type: "QString" }
         }
     }
 }

@@ -120,3 +120,35 @@ void Login::likeToggle(int accID,int postID){
         quer.exec();
     }
 }
+
+bool Login::addAcc(QString usr, QString pass,QString sec,bool isRec, QString pos){
+    int nextID;
+    QSqlQuery quer(data);
+    quer.prepare("select * from accounts where username = :usr;");
+    if(quer.exec()){
+        if (quer.next()){
+            return false;
+        }
+    }
+
+    quer.prepare("select max(accID) from accounts;");
+    if(quer.exec()){
+        if(quer.next()){
+            nextID = quer.value("max(accID)").toInt();
+            nextID +=1;
+
+
+            quer.prepare("insert into accounts(accID,username,password,isRecruiter,position,color,answer) values (:nxtID,:usr,:pass,:isRec,:pos,\"#ffffff\",:sec);");
+            quer.bindValue(":nxtID",nextID);
+            quer.bindValue(":usr",usr);
+            quer.bindValue(":pass",pass);
+            quer.bindValue(":isRec",isRec);
+            quer.bindValue(":pos",pos);
+            quer.bindValue(":sec",sec);
+            if(quer.exec()){
+                return true;
+
+            }
+        }
+    }
+}

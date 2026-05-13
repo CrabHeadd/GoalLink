@@ -12,6 +12,10 @@ Page{
     property string userName: ""
     property string qmlposition: ""
     property bool viz: false
+    property bool viz2: false
+    property bool rec: false
+    property string errNote: ""
+    property string res: ""
     Login{
         id: log
         onResult: (accID, position) => {
@@ -23,7 +27,13 @@ Page{
     onLoginChanged: {
         if (login != 0){
             console.log("LOGINCHANGED POSITION:", qmlposition)
-            userName = usernameField.text
+            if (res == ""){
+                userName = usernameField.text
+            }
+            else{
+                userName = t1.text
+            }
+
             change.push("Home.qml",{sqlModel:sqlModel,userName:userName,qmlposition:qmlposition,login:login})
         }
     }
@@ -262,6 +272,58 @@ Page{
             anchors.top: txt3.top
             anchors.topMargin: 8
             width: 80
+        }
+        Text {
+            id: txt4
+            anchors.left: parent.Left
+            anchors.top: txt3.bottom
+            anchors.topMargin: 10
+            text: "Position: "
+        }
+        TextArea{
+            id: t4
+            anchors.left: txt4.right
+            anchors.top: txt4.top
+            width: 80
+        }
+        Button{
+            id: button
+            anchors.left: parent.left
+            anchors.top: t4.bottom
+            width: 100
+            height: 10
+            Text{
+                text: rec ? "Not Recruiter" : "Recruiter"
+                anchors.centerIn: parent
+            }
+            onClicked: {
+                rec = true
+            }
+        }
+
+        Button{
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top:button.bottom
+            anchors.topMargin: 10
+            Text {
+                text: "SUBMIT"
+                anchors.centerIn: parent
+            }
+            onClicked: {
+
+                if (t1.text == "" || t2.text == "" || t3.text == "" || t4.text == ""){
+                    errNote = "Please fill out all fields"
+                    viz2 = true
+                }
+                else if(log.addAcc(t1.text,t2.text,t3.text,rec,t4.text)){
+                    log.checkLogin(t1.text,t2.text,rec)
+                attempt=true
+                }
+                else{
+                    errNote = "Username already registered"
+                    viz2
+                }
+            }
         }
     }
 }

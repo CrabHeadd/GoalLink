@@ -19,6 +19,7 @@ public:
     Q_INVOKABLE QString getColor(int accID);
     Q_INVOKABLE void likeToggle(int accID,int postID);
     Q_INVOKABLE void setColor(int accID, QString col);
+    Q_INVOKABLE bool addAcc(QString usr, QString pass,QString sec,bool isRec, QString pos);
 signals:
     void result(int res,QString position);
     void liked(bool res);

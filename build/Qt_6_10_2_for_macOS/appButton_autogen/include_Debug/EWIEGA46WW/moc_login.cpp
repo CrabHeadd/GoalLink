@@ -60,7 +60,11 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         "getColor",
         "likeToggle",
         "setColor",
-        "col"
+        "col",
+        "addAcc",
+        "pass",
+        "sec",
+        "pos"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -95,6 +99,11 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         // Method 'setColor'
         QtMocHelpers::MethodData<void(int, QString)>(19, 4, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 13 }, { QMetaType::QString, 20 },
+        }}),
+        // Method 'addAcc'
+        QtMocHelpers::MethodData<QString(QString, QString, QString, bool, QString)>(21, 4, QMC::AccessPublic, QMetaType::QString, {{
+            { QMetaType::QString, 9 }, { QMetaType::QString, 22 }, { QMetaType::QString, 23 }, { QMetaType::Bool, 11 },
+            { QMetaType::QString, 24 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -133,6 +142,8 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
             if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
         case 6: _t->likeToggle((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
         case 7: _t->setColor((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 8: { QString _r = _t->addAcc((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
+            if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
@@ -163,14 +174,14 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }
