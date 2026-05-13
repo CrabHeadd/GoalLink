@@ -101,7 +101,7 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
             { QMetaType::Int, 13 }, { QMetaType::QString, 20 },
         }}),
         // Method 'addAcc'
-        QtMocHelpers::MethodData<QString(QString, QString, QString, bool, QString)>(21, 4, QMC::AccessPublic, QMetaType::QString, {{
+        QtMocHelpers::MethodData<bool(QString, QString, QString, bool, QString)>(21, 4, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::QString, 9 }, { QMetaType::QString, 22 }, { QMetaType::QString, 23 }, { QMetaType::Bool, 11 },
             { QMetaType::QString, 24 },
         }}),
@@ -142,8 +142,8 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
             if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
         case 6: _t->likeToggle((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
         case 7: _t->setColor((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
-        case 8: { QString _r = _t->addAcc((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
-            if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
+        case 8: { bool _r = _t->addAcc((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }

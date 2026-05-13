@@ -5,12 +5,12 @@ import Button
 Page{
     id: root
     required property var sqlModel
-    required property var userName
+    required property string userName
     required property var qmlposition
     required property var login
 
     property var profColor: log2.getColor(login)
-    property var letCol: "black"
+    property string letCol: "black"
     onProfColorChanged:{
         if (profColor == "#ffffff") {
             letCol = "#000000"
@@ -90,11 +90,7 @@ Page{
         anchors.horizontalCenter: parent.horizontalCenter
     }
     Button{
-        Text {
-            text: "submit"
-            color: white
-            anchors.centerIn: parent
-        }
+        text: "submit"
         onClicked: {
             log2.addPost(login,newPost.text)
             root.sqlModel.updateMod()

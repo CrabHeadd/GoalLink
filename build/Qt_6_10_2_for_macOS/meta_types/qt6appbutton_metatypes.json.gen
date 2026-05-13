@@ -138,9 +138,9 @@
                             }
                         ],
                         "index": 8,
-                        "lineNumber": 23,
+                        "lineNumber": 22,
                         "name": "addAcc",
-                        "returnType": "QString"
+                        "returnType": "bool"
                     }
                 ],
                 "object": true,
@@ -159,7 +159,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 25,
+                        "lineNumber": 24,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -172,7 +172,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 26,
+                        "lineNumber": 25,
                         "name": "liked",
                         "returnType": "void"
                     }

@@ -125,6 +125,7 @@ bool Login::addAcc(QString usr, QString pass,QString sec,bool isRec, QString pos
     int nextID;
     QSqlQuery quer(data);
     quer.prepare("select * from accounts where username = :usr;");
+    quer.bindValue(":usr",usr);
     if(quer.exec()){
         if (quer.next()){
             return false;

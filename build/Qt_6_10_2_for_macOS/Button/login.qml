@@ -12,8 +12,9 @@ Page{
     property string userName: ""
     property string qmlposition: ""
     property bool viz: false
+    property bool viz2: false
     property bool rec: false
-    property string res: ""
+    property string errNote: ""
     Login{
         id: log
         onResult: (accID, position) => {
@@ -24,14 +25,6 @@ Page{
     }
     onLoginChanged: {
         if (login != 0){
-            console.log("LOGINCHANGED POSITION:", qmlposition)
-            if (res == ""){
-                userName = usernameField.text
-            }
-            else{
-                userName = t1.text
-            }
-
             change.push("Home.qml",{sqlModel:sqlModel,userName:userName,qmlposition:qmlposition,login:login})
         }
     }
@@ -110,7 +103,7 @@ Page{
                         anchors.topMargin: 50
                         color: "#487A62"
                         font.pixelSize: 12
-                        text: qsTr("Email")
+                        text: "Username"
                         font.family: "silom"
                     }
                     Text {
@@ -156,8 +149,9 @@ Page{
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            log.checkLogin(usernameField.text,passwordField.text,0)
                             attempt=true
+                            win.userName = usernameField.text
+                            log.checkLogin(usernameField.text,passwordField.text,0)
 //                            change.push("Home.qml",{
 //                                            sqlModel: sqlModel
 //                                        })
@@ -186,8 +180,9 @@ Page{
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{
-                            log.checkLogin(usernameField.text,passwordField.text,1)
                             attempt=true
+                            win.userName = usernameField.text
+                            log.checkLogin(usernameField.text,passwordField.text,1)
                         }
                     }
                 }
@@ -197,6 +192,8 @@ Page{
                     anchors.rightMargin: 35
                     anchors.top: recSignIn.bottom
                     anchors.topMargin: 5
+                    font.family: "silom"
+                    color: "white"
                     MouseArea{
                         anchors.fill: parent
                         onClicked: {
@@ -225,7 +222,7 @@ Page{
         anchors.centerIn: parent
         closePolicy: Popup.NoAutoClose
         width: 250
-        height: 200
+        height: 250
         Text {
             text: "Fill out the following fields:"
             id: topTxt
@@ -285,30 +282,44 @@ Page{
             width: 80
         }
         Button{
+            id: button
             anchors.left: parent.left
             anchors.top: t4.bottom
-            width: 100
-            height: 10
-            Text{
-                text: rec ? "Not Recruiter" : "Recruiter"
-                anchors.centerIn: parent
-            }
+            text: win.rec ? "Recruiter" : "Not Recruiter"
             onClicked: {
-                rec = true
+                win.rec = !win.rec
             }
         }
 
         Button{
+            id: submit
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: t4.bottom
-            anchors.topMargin: 10
-            Text {
-                text: "SUBMIT"
-                anchors.centerIn: parent
+            anchors.top:button.bottom
+            text: "SUBMIT"
+
+            onClicked: {
+
+                if (t1.text == "" || t2.text == "" || t3.text == "" || t4.text == ""){
+                    errNote = "Please fill out all fields"
+                    viz2 = true
+                }
+                else if(log.addAcc(t1.text,t2.text,t3.text,rec,t4.text)){
+                    attempt=true
+                    win.userName = t1.text
+                    log.checkLogin(t1.text,t2.text,rec)
+                }
+                else{
+                    errNote = "Username already registered"
+                    viz2 = true
+                }
             }
-            onClicked: {res = log.addAcc(t1.text,t2.text,t3.text,rec,t4.text)
-                log.checkLogin(t1.text,t2.text,rec)
-                attempt=true}
+            Text {
+                text: errNote
+                visible: viz2
+                anchors.top: submit.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
         }
     }
 }
