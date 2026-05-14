@@ -83,7 +83,7 @@ Page{
     }
     TextArea{
         id: newPost
-        width: 100
+        width: 120
         height: 20
         anchors.bottom: cM.top
         anchors.bottomMargin: 10
@@ -91,14 +91,15 @@ Page{
     }
     Button{
         text: "submit"
+
         onClicked: {
             log2.addPost(login,newPost.text)
             root.sqlModel.updateMod()
         }
-        width: 50
-        height: 10
+        width: 80
+        height: 20
         anchors.bottom: newPost.top
-        anchors.bottomMargin: -5
+        anchors.bottomMargin: -15
         anchors.right: newPost.left
     }
 
@@ -216,7 +217,7 @@ Page{
 
                 id: rec
                 height: 150
-                width: 200
+                width: 220
                 radius: 10
                 color: "#0A1A12"
                 border.color: "#1A3328"
