@@ -9,7 +9,7 @@
                     }
                 ],
                 "className": "Login",
-                "lineNumber": 9,
+                "lineNumber": 11,
                 "methods": [
                     {
                         "access": "public",
@@ -28,7 +28,7 @@
                             }
                         ],
                         "index": 2,
-                        "lineNumber": 16,
+                        "lineNumber": 18,
                         "name": "checkLogin",
                         "returnType": "void"
                     },
@@ -45,7 +45,7 @@
                             }
                         ],
                         "index": 3,
-                        "lineNumber": 17,
+                        "lineNumber": 19,
                         "name": "getlikes",
                         "returnType": "bool"
                     },
@@ -62,7 +62,7 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 18,
+                        "lineNumber": 20,
                         "name": "addPost",
                         "returnType": "void"
                     },
@@ -75,7 +75,7 @@
                             }
                         ],
                         "index": 5,
-                        "lineNumber": 19,
+                        "lineNumber": 21,
                         "name": "getColor",
                         "returnType": "QString"
                     },
@@ -92,7 +92,7 @@
                             }
                         ],
                         "index": 6,
-                        "lineNumber": 20,
+                        "lineNumber": 22,
                         "name": "likeToggle",
                         "returnType": "void"
                     },
@@ -109,7 +109,7 @@
                             }
                         ],
                         "index": 7,
-                        "lineNumber": 21,
+                        "lineNumber": 23,
                         "name": "setColor",
                         "returnType": "void"
                     },
@@ -138,7 +138,7 @@
                             }
                         ],
                         "index": 8,
-                        "lineNumber": 22,
+                        "lineNumber": 24,
                         "name": "addAcc",
                         "returnType": "bool"
                     },
@@ -151,7 +151,7 @@
                             }
                         ],
                         "index": 9,
-                        "lineNumber": 23,
+                        "lineNumber": 25,
                         "name": "deleteAcc",
                         "returnType": "void"
                     }
@@ -172,7 +172,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 27,
+                        "lineNumber": 29,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -185,7 +185,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 28,
+                        "lineNumber": 30,
                         "name": "liked",
                         "returnType": "void"
                     }

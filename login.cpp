@@ -1,13 +1,13 @@
 #include "login.h"
 
 #include <qdebug.h>
+#include <QSqlError>
 
 Login::Login(QObject *parent)
     : QObject{parent}
-{   data = QSqlDatabase::addDatabase("QSQLITE");
-    data.setDatabaseName(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db");
+{   data = QSqlDatabase::database();
     if(data.open()){
-        qDebug() << "great";
+        qDebug() << "great" << QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db";
     }
 }
 
@@ -56,8 +56,11 @@ void Login::addPost(int accID, QString text){
     int nextID;
     QSqlQuery quer(data);
     quer.prepare("select max(postID) from posts;");
+    qDebug() << "HERE";
     if(quer.exec()){
+        qDebug() << "HERE";
         if(quer.next()){
+            qDebug() << "HERE " << accID;
             nextID = quer.value("max(postID)").toInt();
             nextID +=1;
             qDebug() << nextID;
@@ -65,10 +68,14 @@ void Login::addPost(int accID, QString text){
             QSqlQuery quer2(data);
             quer2.prepare("insert into posts(postID,description,likes,accID) values (:pID,:tex,0,:aID);");
             quer2.bindValue(":aID",accID);
-            quer2.bindValue(":pID",nextID);
             quer2.bindValue(":tex",text);
+            quer2.bindValue(":pID",nextID);
+
             if(quer2.exec()){
                 qDebug() << "success";
+            }
+            else{
+                qDebug() << quer2.lastError();
             }
         }
     }
@@ -148,8 +155,8 @@ bool Login::addAcc(QString usr, QString pass,QString sec,bool isRec, QString pos
             quer.bindValue(":sec",sec);
             if(quer.exec()){
                 return true;
-
             }
+
         }
     }
 }

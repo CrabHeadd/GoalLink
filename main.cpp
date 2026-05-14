@@ -4,12 +4,12 @@
 #include <QSqlTableModel>
 #include <QSqlError>
 #include <QDebug>
-#include <QFile>
 #include <QFileInfo>
-#include <QDir>
 #include <QQmlContext>
 #include "sqlMod.h"
 #include <QStandardPaths>
+#include <QDir>
+#include <QFile>
 
 
 int main(int argc, char *argv[])
@@ -31,6 +31,13 @@ int main(int argc, char *argv[])
     QString dataPath = dataPathDir + "/goalLink.db";
     if (!QFile::exists(dataPath)) {
         QFile::copy(":/qt/qml/Button/goalLink.db", dataPath);
+        QFile::setPermissions(
+            dataPath,
+            QFileDevice::ReadOwner |
+                QFileDevice::WriteOwner |
+                QFileDevice::ReadUser |
+                QFileDevice::WriteUser
+            );
     }
     //
     //QString path = QDir::currentPath() + "";

@@ -997,6 +997,8 @@
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QByteArray \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QCryptographicHash \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QDeadlineTimer \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QDir \
+  /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QFlags \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QHash \
   /Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QIODevice \

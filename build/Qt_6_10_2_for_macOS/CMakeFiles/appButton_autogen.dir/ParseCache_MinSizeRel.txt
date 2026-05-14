@@ -1000,6 +1000,8 @@
  mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QByteArray
  mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QCryptographicHash
  mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QDeadlineTimer
+ mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QDir
+ mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile
  mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QFlags
  mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QHash
  mdp:/Users/giovannigil/Qt/6.10.2/macos/lib/QtCore.framework/Versions/A/Headers/QIODevice

@@ -5,6 +5,8 @@
 #include <QSqlQuery>
 #include <QSqlDatabase>
 #include <QSqlRelationalTableModel>
+#include <QDir>
+#include <QFile>
 
 class Login : public QObject
 {
