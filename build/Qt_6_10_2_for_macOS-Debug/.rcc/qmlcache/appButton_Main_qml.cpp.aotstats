@@ -1,0 +1,31 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 2000,
+                            "functionName": "onCompleted",
+                            "line": 15,
+                            "message": "Cannot retrieve a non-object type by ID: change"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 21,
+                            "message": "Could not find property \"fill\"."
+                        }
+                    ],
+                    "filePath": "/Users/fouadabdelrahman/GoalLink/Main.qml"
+                }
+            ],
+            "moduleId": "Button(appButton)"
+        }
+    ]
+}

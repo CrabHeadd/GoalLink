@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/qt/qml/Button/">
+    <file alias="socc1.jpg">/Users/fouadabdelrahman/GoalLink/socc1.jpg</file>
+    <file alias="logo.png">/Users/fouadabdelrahman/GoalLink/logo.png</file>
+    <file alias="goalLink.db">/Users/fouadabdelrahman/GoalLink/goalLink.db</file>
+    <file alias="heart.png">/Users/fouadabdelrahman/GoalLink/heart.png</file>
+    <file alias="redheart.png">/Users/fouadabdelrahman/GoalLink/redheart.png</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/qt/qml/Button/">
+    <file alias="Main.qml">/Users/fouadabdelrahman/GoalLink/Main.qml</file>
+    <file alias="Home.qml">/Users/fouadabdelrahman/GoalLink/Home.qml</file>
+    <file alias="login.qml">/Users/fouadabdelrahman/GoalLink/login.qml</file>
+  </qresource>
+</RCC>
+

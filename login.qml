@@ -1,57 +1,84 @@
 import QtQuick
 import QtQuick.Controls
 import Button
-Page{
-    background: Rectangle{
+
+Page {
+    background: Rectangle {
         z: -1
         color: "black"
     }
+
     id: win
-    property int login : 0
-    property bool attempt : false
+
+    property int login: 0
+    property bool attempt: false
     property string userName: ""
     property string qmlposition: ""
     property bool viz: false
     property bool viz2: false
     property bool rec: false
     property string errNote: ""
-    Login{
+
+    Login {
         id: log
+
         onResult: (accID, position) => {
-                qmlposition = position
-                login = accID
-                console.log("SIGNAL POSITION:", qmlposition,login)
+            qmlposition = position
+            login = accID
+            console.log("SIGNAL POSITION:", qmlposition, login)
+        }
+
+        onAddAccResult: (success) => {
+            if (success) {
+                attempt = true
+                win.userName = t1.text
+                log.checkLogin(t1.text, t2.text, win.rec)
+            } else {
+                errNote = "Username already registered"
+                viz2 = true
             }
-    }
-    onLoginChanged: {
-        if (login != 0){
-            change.push("Home.qml",{sqlModel:sqlModel,userName:userName,qmlposition:qmlposition,login:login})
         }
     }
 
-    Column{
-        anchors.centerIn: parent
-        Row{
-            anchors.horizontalCenter: parent.horizontalCenter
-            Rectangle{
+    onLoginChanged: {
+        if (login !== 0) {
+            change.push("Home.qml", {
+                sqlModel: sqlModel,
+                userName: userName,
+                qmlposition: qmlposition,
+                login: login
+            })
+        }
+    }
 
+    Column {
+        anchors.centerIn: parent
+
+        Row {
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Rectangle {
                 id: logo
                 height: 50
                 width: 120
                 color: "#00e5a0"
                 radius: 7
-                Row{
+
+                Row {
                     anchors.centerIn: parent
+
                     Image {
                         id: logoImage
                         source: "logo.png"
                         height: 20
                         width: 20
                     }
+
                     Item {
                         width: 3
-                        height:1
+                        height: 1
                     }
+
                     Text {
                         font.family: "silom"
                         font.pixelSize: 18
@@ -61,8 +88,10 @@ Page{
                 }
             }
         }
-        Row{
+
+        Row {
             anchors.horizontalCenter: parent.horizontalCenter
+
             Text {
                 id: logoSubText
                 text: qsTr("The recruiting network for athletes")
@@ -70,22 +99,26 @@ Page{
                 font.family: "silom"
             }
         }
-        Row{
+
+        Row {
             anchors.horizontalCenter: parent.horizontalCenter
             height: 20
             width: 1
         }
-        Row{
+
+        Row {
             anchors.horizontalCenter: parent.horizontalCenter
-            Rectangle{
-                id: rec
+
+            Rectangle {
+                id: signInBox
                 radius: 7
                 color: "#0A1A12"
                 width: 300
-                height:350
+                height: 350
                 border.width: 2
                 border.color: "#1A3328"
-                Column{
+
+                Column {
                     Text {
                         anchors.left: parent.left
                         anchors.leftMargin: 20
@@ -96,6 +129,7 @@ Page{
                         text: qsTr("SIGN IN")
                         font.family: "silom"
                     }
+
                     Text {
                         anchors.left: parent.left
                         anchors.leftMargin: 20
@@ -106,6 +140,7 @@ Page{
                         text: "Username"
                         font.family: "silom"
                     }
+
                     Text {
                         anchors.left: parent.left
                         anchors.leftMargin: 20
@@ -117,21 +152,25 @@ Page{
                         font.family: "silom"
                     }
                 }
-                TextField{
+
+                TextField {
                     id: usernameField
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: 65
                     width: 258
                 }
-                TextField{
+
+                TextField {
                     id: passwordField
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: 125
                     width: 258
+                    echoMode: TextInput.Password
                 }
-                Rectangle{
+
+                Rectangle {
                     radius: 7
                     color: "#00e5a0"
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -139,26 +178,26 @@ Page{
                     anchors.topMargin: 175
                     width: 258
                     height: 50
-                    Text{
+
+                    Text {
                         color: "#0A1A12"
                         text: qsTr("REGISTER AS PLAYER")
                         anchors.horizontalCenter: parent.horizontalCenter
                         font.family: "silom"
                         anchors.verticalCenter: parent.verticalCenter
                     }
-                    MouseArea{
+
+                    MouseArea {
                         anchors.fill: parent
-                        onClicked:{
-                            attempt=true
+                        onClicked: {
+                            attempt = true
                             win.userName = usernameField.text
-                            log.checkLogin(usernameField.text,passwordField.text,0)
-//                            change.push("Home.qml",{
-//                                            sqlModel: sqlModel
-//                                        })
+                            log.checkLogin(usernameField.text, passwordField.text, false)
                         }
                     }
                 }
-                Rectangle{
+
+                Rectangle {
                     id: recSignIn
                     color: parent.color
                     radius: 7
@@ -170,22 +209,24 @@ Page{
                     width: 258
                     height: 50
 
-                    Text{
+                    Text {
                         color: "#00e5a0"
                         text: qsTr("REGISTER AS RECRUITER")
                         anchors.horizontalCenter: parent.horizontalCenter
                         font.family: "silom"
                         anchors.verticalCenter: parent.verticalCenter
                     }
-                    MouseArea{
+
+                    MouseArea {
                         anchors.fill: parent
-                        onClicked:{
-                            attempt=true
+                        onClicked: {
+                            attempt = true
                             win.userName = usernameField.text
-                            log.checkLogin(usernameField.text,passwordField.text,1)
+                            log.checkLogin(usernameField.text, passwordField.text, true)
                         }
                     }
                 }
+
                 Text {
                     text: "Sign Up"
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -194,15 +235,17 @@ Page{
                     anchors.topMargin: 5
                     font.family: "silom"
                     color: "white"
-                    MouseArea{
+
+                    MouseArea {
                         anchors.fill: parent
                         onClicked: {
                             viz = true
                         }
                     }
                 }
+
                 Text {
-                    visible: !login && attempt
+                    visible: login === 0 && attempt
                     anchors.right: parent.horizontalCenter
                     anchors.rightMargin: 35
                     anchors.bottom: parent.bottom
@@ -213,113 +256,115 @@ Page{
                         color: "white"
                     }
                 }
-
-        }
             }
+        }
     }
-    Popup{
+
+    Popup {
         visible: viz
         anchors.centerIn: parent
         closePolicy: Popup.NoAutoClose
         width: 250
         height: 250
+
         Text {
             text: "Fill out the following fields:"
             id: topTxt
         }
+
         Text {
             id: txt1
-            anchors.left: parent.Left
+            anchors.left: parent.left
             anchors.top: topTxt.bottom
             anchors.topMargin: 10
             text: "Username: "
         }
-        TextArea{
+
+        TextArea {
             id: t1
             anchors.left: txt1.right
             anchors.top: txt1.top
             width: 80
         }
+
         Text {
             id: txt2
-            anchors.left: parent.Left
+            anchors.left: parent.left
             anchors.top: txt1.bottom
             anchors.topMargin: 10
             text: "Password: "
         }
-        TextArea{
+
+        TextArea {
             id: t2
             anchors.left: txt2.right
             anchors.top: txt2.top
             width: 80
         }
+
         Text {
             id: txt3
-            anchors.left: parent.Left
+            anchors.left: parent.left
             anchors.top: txt2.bottom
             anchors.topMargin: 10
-            text: "SECURITY QUESTION
- Mother's maiden name: "
+            text: "SECURITY QUESTION\nMother's maiden name: "
         }
-        TextArea{
+
+        TextArea {
             id: t3
             anchors.left: txt3.right
             anchors.top: txt3.top
             anchors.topMargin: 8
             width: 80
         }
+
         Text {
             id: txt4
-            anchors.left: parent.Left
+            anchors.left: parent.left
             anchors.top: txt3.bottom
             anchors.topMargin: 10
             text: "Position: "
         }
-        TextArea{
+
+        TextArea {
             id: t4
             anchors.left: txt4.right
             anchors.top: txt4.top
             width: 80
         }
-        Button{
+
+        Button {
             id: button
             anchors.left: parent.left
             anchors.top: t4.bottom
             text: win.rec ? "Recruiter" : "Not Recruiter"
+
             onClicked: {
                 win.rec = !win.rec
             }
         }
 
-        Button{
+        Button {
             id: submit
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top:button.bottom
+            anchors.top: button.bottom
             text: "SUBMIT"
 
             onClicked: {
-
-                if (t1.text == "" || t2.text == "" || t3.text == "" || t4.text == ""){
+                if (t1.text === "" || t2.text === "" || t3.text === "" || t4.text === "") {
                     errNote = "Please fill out all fields"
                     viz2 = true
-                }
-                else if(log.addAcc(t1.text,t2.text,t3.text,rec,t4.text)){
-                    attempt=true
-                    win.userName = t1.text
-                    log.checkLogin(t1.text,t2.text,rec)
-                }
-                else{
-                    errNote = "Username already registered"
-                    viz2 = true
+                } else {
+                    log.addAcc(t1.text, t2.text, t3.text, win.rec, t4.text)
                 }
             }
+
             Text {
                 text: errNote
                 visible: viz2
                 anchors.top: submit.bottom
                 anchors.horizontalCenter: parent.horizontalCenter
             }
-
         }
     }
 }

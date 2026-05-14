@@ -1,0 +1,3 @@
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/appButton_autogen/include/../EWIEGA46WW/moc_login.cpp.json
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/appButton_autogen/include/../EWIEGA46WW/moc_sqlMod.cpp.json
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/appButton_autogen/include/../EWIEGA46WW/moc_supabase.cpp.json

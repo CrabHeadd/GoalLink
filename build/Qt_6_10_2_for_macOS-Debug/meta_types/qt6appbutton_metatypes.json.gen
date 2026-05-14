@@ -1,0 +1,262 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "Login",
+                "lineNumber": 12,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pss",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "isRec",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 27,
+                        "name": "checkLogin",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "postID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 28,
+                        "name": "getlikes",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 29,
+                        "name": "addPost",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 30,
+                        "name": "getColor",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "postID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 31,
+                        "name": "likeToggle",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "accID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "col",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 32,
+                        "name": "setColor",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pass",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "sec",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "isRec",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "pos",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 34,
+                        "name": "addAcc",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "lineNumber": 36,
+                        "name": "deleteAcc",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "Login",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "res",
+                                "type": "int"
+                            },
+                            {
+                                "name": "position",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 40,
+                        "name": "result",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "res",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 41,
+                        "name": "liked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 42,
+                        "name": "addAccResult",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "login.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "sqlMod",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 14,
+                        "name": "updateMod",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "sqlMod",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QSqlRelationalTableModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "sqlMod.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Supabase",
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "Supabase",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "supabase.h",
+        "outputRevision": 69
+    }
+]

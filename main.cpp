@@ -6,29 +6,38 @@
 #include <QDebug>
 #include <QFileInfo>
 #include <QQmlContext>
-#include "sqlMod.h"
 #include <QStandardPaths>
 #include <QDir>
 #include <QFile>
 
+#include "sqlMod.h"
+#include "login.h"
+#include "supabase.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+
+    Supabase supabase;
+    supabase.testConnection();
+
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,
         &app,
         []() { QCoreApplication::exit(-1); },
-        Qt::QueuedConnection);
+        Qt::QueuedConnection
+        );
 
+    QString dataPathDir =
+        QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
 
-    //
-    QString dataPathDir =QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(dataPathDir);
+
     QString dataPath = dataPathDir + "/goalLink.db";
+
     if (!QFile::exists(dataPath)) {
         QFile::copy(":/qt/qml/Button/goalLink.db", dataPath);
         QFile::setPermissions(
@@ -39,30 +48,50 @@ int main(int argc, char *argv[])
                 QFileDevice::WriteUser
             );
     }
-    //
-    //QString path = QDir::currentPath() + "";
-    //QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/goalLink.db";
+
     QSqlDatabase Db = QSqlDatabase::addDatabase("QSQLITE");
-    //QString path = QCoreApplication::applicationDirPath() + "/goalLink.db";
     Db.setDatabaseName(dataPath);
+
     if (!Db.open()) {
-        qDebug() << "INVALID DATABASE ";
+        qDebug() << "INVALID DATABASE";
+        qDebug() << Db.lastError().text();
         return -1;
     }
+
+    qDebug() << "Database Loaded";
     qDebug() << "Path:" << Db.databaseName();
     qDebug() << "Exists:" << QFile::exists(Db.databaseName());
     qDebug() << "Size:" << QFileInfo(Db.databaseName()).size();
     qDebug() << "Tables:" << Db.tables();
+
     sqlMod model{nullptr, Db};
-    model.setQuery("select * from posts join accounts on posts.accID == accounts.accID;");
+
+    model.setQuery(
+        "SELECT posts.postID, "
+        "posts.description, "
+        "posts.likes, "
+        "posts.accID, "
+        "accounts.username, "
+        "accounts.position, "
+        "accounts.color "
+        "FROM posts "
+        "JOIN accounts "
+        "ON posts.accID = accounts.accID;"
+        );
+
     model.setEditStrategy(QSqlTableModel::OnFieldChange);
-    model.setRelation(3,QSqlRelation("accounts","accID","username"));
-    if(model.select()){
-        qDebug() << "Db loaded";
+
+    if (model.select()) {
+        qDebug() << "Db loaded successfully";
+    } else {
+        qDebug() << "Model failed to load";
     }
+
     engine.setInitialProperties({
         { "sqlModel", QVariant::fromValue(&model) }
     });
+
     engine.loadFromModule("Button", "Main");
+
     return app.exec();
 }

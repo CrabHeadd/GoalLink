@@ -1,0 +1,15 @@
+-rootPath
+/Users/fouadabdelrahman/GoalLink
+-cmake-output
+-output-file
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/.qt/qml_imports/appButton_build.cmake
+-importPath
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug
+-importPath
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/Button
+-importPath
+/Users/fouadabdelrahman/Qt/6.10.2/macos/qml
+-qrcFiles
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qmake_Button.qrc
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appButton_raw_qml_0.qrc
+/Users/fouadabdelrahman/GoalLink/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appButton_raw_res_0.qrc
