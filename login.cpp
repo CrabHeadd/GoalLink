@@ -181,6 +181,10 @@ void Login::deleteAcc(QString usr){
     quer.bindValue(":accID",accID);
     quer.exec();
 
+    quer.prepare("update from posts set likes = likes - 1 where accID == :accID");
+    quer.bindValue(":accID",accID);
+    quer.exec();
+
     quer.prepare("delete from accounts where username = :usr;");
     quer.bindValue(":usr",usr);
     quer.exec();
