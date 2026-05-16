@@ -194,3 +194,39 @@ void Login::deleteAcc(QString usr){
 
 
 }
+
+QString Login::passwordVer(QString pass){
+    bool four = false, spec = false, upper = false, lower = false,len = false;
+    int i;
+
+    for (i=0; i < pass.length();i++){
+        if (pass[i].isUpper()) {
+            upper = true;
+        }
+
+        if (pass[i].isLower()) {
+            lower = true;
+        }
+
+        if (!pass[i].isLetterOrNumber()) {
+            spec = true;
+        }
+    }
+    if (i <6){
+        return "Password must be at least\n six characters long";
+    }
+    if (!upper){
+        return "Password must contain \n"
+               "at least one upper letter";
+    }
+    if (!lower){
+        return "Password must contain \n"
+               "at least one lowercase letter";
+    }
+    if (!spec){
+        return "Password must contain \n"
+               "at least one special letter";
+    }
+
+    return "";
+}

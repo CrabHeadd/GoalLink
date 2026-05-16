@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.21.1)
 
 project(Button VERSION 0.1 LANGUAGES CXX)
 
@@ -15,6 +15,7 @@ qt_add_executable(appButton
     login.cpp
     login.h
 )
+
 
 qt_add_qml_module(appButton
     URI Button

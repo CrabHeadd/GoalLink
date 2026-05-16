@@ -146,12 +146,25 @@
                         "access": "public",
                         "arguments": [
                             {
-                                "name": "usr",
+                                "name": "pass",
                                 "type": "QString"
                             }
                         ],
                         "index": 9,
                         "lineNumber": 25,
+                        "name": "passwordVer",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "usr",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "lineNumber": 26,
                         "name": "deleteAcc",
                         "returnType": "void"
                     }
@@ -172,7 +185,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 29,
+                        "lineNumber": 30,
                         "name": "result",
                         "returnType": "void"
                     },
@@ -185,7 +198,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 30,
+                        "lineNumber": 31,
                         "name": "liked",
                         "returnType": "void"
                     }

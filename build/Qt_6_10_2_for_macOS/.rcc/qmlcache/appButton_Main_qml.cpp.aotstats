@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 3000,
                             "functionName": "onCompleted",
                             "line": 15,
                             "message": "Cannot retrieve a non-object type by ID: change"

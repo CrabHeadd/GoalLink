@@ -65,6 +65,7 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
         "pass",
         "sec",
         "pos",
+        "passwordVer",
         "deleteAcc"
     };
 
@@ -106,8 +107,12 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
             { QMetaType::QString, 9 }, { QMetaType::QString, 22 }, { QMetaType::QString, 23 }, { QMetaType::Bool, 11 },
             { QMetaType::QString, 24 },
         }}),
+        // Method 'passwordVer'
+        QtMocHelpers::MethodData<QString(QString)>(25, 4, QMC::AccessPublic, QMetaType::QString, {{
+            { QMetaType::QString, 22 },
+        }}),
         // Method 'deleteAcc'
-        QtMocHelpers::MethodData<void(QString)>(25, 4, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::MethodData<void(QString)>(26, 4, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 9 },
         }}),
     };
@@ -149,7 +154,9 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         case 7: _t->setColor((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         case 8: { bool _r = _t->addAcc((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 9: _t->deleteAcc((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 9: { QString _r = _t->passwordVer((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
+        case 10: _t->deleteAcc((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
@@ -180,14 +187,14 @@ int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 11;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 11;
     }
     return _id;
 }

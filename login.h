@@ -22,6 +22,7 @@ public:
     Q_INVOKABLE void likeToggle(int accID,int postID);
     Q_INVOKABLE void setColor(int accID, QString col);
     Q_INVOKABLE bool addAcc(QString usr, QString pass,QString sec,bool isRec, QString pos);
+    Q_INVOKABLE QString passwordVer(QString pass);
     Q_INVOKABLE void deleteAcc(QString usr);
     int getAccID(QString usr);
 

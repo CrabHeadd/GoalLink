@@ -222,7 +222,7 @@ Page{
         anchors.centerIn: parent
         closePolicy: Popup.NoAutoClose
         width: 250
-        height: 250
+        height: 260
         Text {
             text: "Fill out the following fields:"
             id: topTxt
@@ -298,19 +298,27 @@ Page{
             text: "SUBMIT"
 
             onClicked: {
-
+                errNote = log.passwordVer(t2.text)
                 if (t1.text == "" || t2.text == "" || t3.text == "" || t4.text == ""){
                     errNote = "Please fill out all fields"
                     viz2 = true
                 }
-                else if(log.addAcc(t1.text,t2.text,t3.text,rec,t4.text)){
-                    attempt=true
-                    win.userName = t1.text
-                    log.checkLogin(t1.text,t2.text,rec)
-                }
                 else{
-                    errNote = "Username already registered"
-                    viz2 = true
+                    errNote = log.passwordVer(t2.text)
+                    if(errNote == ""){
+                        if (log.addAcc(t1.text,t2.text,t3.text,rec,t4.text)){
+                            attempt=true
+                            win.userName = t1.text
+                            log.checkLogin(t1.text,t2.text,rec)
+                        }
+                        else{
+                            errNote = "Username already registered"
+                            viz2 = true
+                        }
+                    }
+                    else{
+                        viz2 = true
+                    }
                 }
             }
             Text {

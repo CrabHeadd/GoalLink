@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 21,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 1000,
                             "functionName": "onLoginChanged",
                             "line": 26,
                             "message": "Cannot access value for name change"
@@ -530,7 +530,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 317,
+                            "line": 325,
                             "message": "Cannot access value for name errNote"
                         },
                         {
@@ -538,7 +538,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 318,
+                            "line": 326,
                             "message": "Cannot access value for name viz2"
                         },
                         {
@@ -546,7 +546,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 319,
+                            "line": 327,
                             "message": "Cannot retrieve a non-object type by ID: submit"
                         },
                         {
@@ -554,7 +554,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 320,
+                            "line": 328,
                             "message": ""
                         }
                     ],
